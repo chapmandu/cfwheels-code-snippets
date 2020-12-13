@@ -1,0 +1,44 @@
+{
+    "name": "cfwheels",
+    "displayName": "CFWheels",
+    "description": "Code snippets for CFWheels 2.x",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "publisher": "chapmandu",
+    "repository": {
+        "type": "git",
+        "name": "https://github.com/chapmandu/cfwheels-code-snippets"
+    },
+    "bugs": {
+        "type": "git",
+        "name": "https://github.com/chapmandu/cfwheels-code-snippets/issues"
+    },
+    "galleryBanner": {
+        "color": "##B2050E"
+    },
+    "icon": "assets/icon.png",
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "lang-cfml",
+                "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "cfml",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    },
+    "keywords": [
+        "CFML",
+        "ColdFusion",
+        "Lucee",
+        "Wheels",
+        "CFWheels"
+    ],
+}
