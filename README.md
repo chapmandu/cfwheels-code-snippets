@@ -1,6 +1,6 @@
-# CFWheels Framework snippets for VS Code
+# CFWheels Visual Studio Code Snippets Extension
 
-A set of snippets for the [CFWheels](https://api.cfwheels.org) framework.
+A VSCode snippets extension for the [CFWheels](https://api.cfwheels.org) framework.
 
 ## Contributing
 
