@@ -1,1235 +1,1483 @@
 {
-	"URLFor": {
-		"body": ["URLFor()"],
-		"description": "Creates an internal URL based on supplied arguments.",
-		"prefix": "URLFor"
-	},
-	"accessibleProperties": {
-		"body": ["accessibleProperties()"],
-		"description": "Use this method to specify which properties can be set through mass assignment.",
-		"prefix": "accessibleProperties"
-	},
-	"addError": {
-		"body": ["addError(property=\"$1\", message=\"$2\")"],
-		"description": "Adds an error on a specific property.",
-		"prefix": "addError"
-	},
-	"addErrorToBase": {
-		"body": ["addErrorToBase(message=\"$1\")"],
-		"description": "Adds an error on a specific property.",
-		"prefix": "addErrorToBase"
-	},
-	"addFormat": {
-		"body": ["addFormat(extension=\"$1\", mimeType=\"$2\")"],
-		"description": "Adds a new MIME format to your Wheels application for use with responding to multiple formats.",
-		"prefix": "addFormat"
-	},
-	"afterCreate": {
-		"body": ["afterCreate()"],
-		"description": "Registers method(s) that should be called after a new object is created.",
-		"prefix": "afterCreate"
-	},
-	"afterDelete": {
-		"body": ["afterDelete()"],
-		"description": "Registers method(s) that should be called after an object is deleted.",
-		"prefix": "afterDelete"
-	},
-	"afterFind": {
-		"body": ["afterFind()"],
-		"description": "Registers method(s) that should be called after an existing object has been initialized (which is usually done with the findByKey or findOne method).",
-		"prefix": "afterFind"
-	},
-	"afterInitialization": {
-		"body": ["afterInitialization()"],
-		"description": "Registers method(s) that should be called after an object has been initialized.",
-		"prefix": "afterInitialization"
-	},
-	"afterNew": {
-		"body": ["afterNew()"],
-		"description": "Registers method(s) that should be called after a new object has been initialized (which is usually done with the new method).",
-		"prefix": "afterNew"
-	},
-	"afterSave": {
-		"body": ["afterSave()"],
-		"description": "Registers method(s) that should be called after an object is saved.",
-		"prefix": "afterSave"
-	},
-	"afterUpdate": {
-		"body": ["afterUpdate()"],
-		"description": "Registers method(s) that should be called after an existing object is updated.",
-		"prefix": "afterUpdate"
-	},
-	"afterValidation": {
-		"body": ["afterValidation()"],
-		"description": "Registers method(s) that should be called after an object is validated.",
-		"prefix": "afterValidation"
-	},
-	"afterValidationOnCreate": {
-		"body": ["afterValidationOnCreate()"],
-		"description": "Registers method(s) that should be called after a new object is validated.",
-		"prefix": "afterValidationOnCreate"
-	},
-	"afterValidationOnUpdate": {
-		"body": ["afterValidationOnUpdate()"],
-		"description": "Registers method(s) that should be called after an existing object is validated.",
-		"prefix": "afterValidationOnUpdate"
-	},
-	"allChanges": {
-		"body": ["allChanges()"],
-		"description": "Returns a struct detailing all changes that have been made on the object but not yet saved to the database.",
-		"prefix": "allChanges"
-	},
-	"allErrors": {
-		"body": ["allErrors()"],
-		"description": "Returns an array of all the errors on the object.",
-		"prefix": "allErrors"
-	},
-	"authenticityTokenField": {
-		"body": ["authenticityTokenField()"],
-		"description": "Returns a hidden form field containing a new authenticity token.",
-		"prefix": "authenticityTokenField"
-	},
-	"autoLink": {
-		"body": ["autoLink(text=\"$1\")"],
-		"description": "Turns all URLs and email addresses into hyperlinks.",
-		"prefix": "autoLink"
-	},
-	"automaticValidations": {
-		"body": ["automaticValidations(value=$1)"],
-		"description": "Whether or not to enable default validations for this model.",
-		"prefix": "automaticValidations"
-	},
-	"average": {
-		"body": ["average(property=\"$1\")"],
-		"description": "Calculates the average value for a given property. Uses the SQL function AVG. If no records can be found to perform the calculation on you can use the ifNull argument to decide what should be returned.",
-		"prefix": "average"
-	},
-	"beforeCreate": {
-		"body": ["beforeCreate()"],
-		"description": "Registers method(s) that should be called before a new object is created.",
-		"prefix": "beforeCreate"
-	},
-	"beforeDelete": {
-		"body": ["beforeDelete()"],
-		"description": "Registers method(s) that should be called before an object is deleted.",
-		"prefix": "beforeDelete"
-	},
-	"beforeSave": {
-		"body": ["beforeSave()"],
-		"description": "Registers method(s) that should be called before an object is saved.",
-		"prefix": "beforeSave"
-	},
-	"beforeUpdate": {
-		"body": ["beforeUpdate()"],
-		"description": "Registers method(s) that should be called before an existing object is updated.",
-		"prefix": "beforeUpdate"
-	},
-	"beforeValidation": {
-		"body": ["beforeValidation()"],
-		"description": "Registers method(s) that should be called before an object is validated.",
-		"prefix": "beforeValidation"
-	},
-	"beforeValidationOnCreate": {
-		"body": ["beforeValidationOnCreate()"],
-		"description": "Registers method(s) that should be called before a new object is validated.",
-		"prefix": "beforeValidationOnCreate"
-	},
-	"beforeValidationOnUpdate": {
-		"body": ["beforeValidationOnUpdate()"],
-		"description": "Registers method(s) that should be called before an existing object is validated.",
-		"prefix": "beforeValidationOnUpdate"
-	},
-	"belongsTo": {
-		"body": ["belongsTo(name=\"$1\")"],
-		"description": "Sets up a belongsTo association between this model and the specified one.\nUse this association when this model contains a foreign key referencing another model.",
-		"prefix": "belongsTo"
-	},
-	"buttonTag": {
-		"body": ["buttonTag()"],
-		"description": "Builds and returns a string containing a button form control.",
-		"prefix": "buttonTag"
-	},
-	"buttonTo": {
-		"body": ["buttonTo()"],
-		"description": "Creates a form containing a single button that submits to the URL. The URL is built the same way as the linkTo function.",
-		"prefix": "buttonTo"
-	},
-	"caches": {
-		"body": ["caches()"],
-		"description": "Tells CFWheels to cache one or more actions.",
-		"prefix": "caches"
-	},
-	"capitalize": {
-		"body": ["capitalize(text=\"$1\")"],
-		"description": "Capitalizes all words in the text to create a nicer looking title.",
-		"prefix": "capitalize"
-	},
-	"changedFrom": {
-		"body": ["changedFrom(property=\"$1\")"],
-		"description": "Returns the previous value of a property that has changed. Returns an empty string if no previous value exists. Wheels will keep a note of the previous property value until the object is saved to the database.",
-		"prefix": "changedFrom"
-	},
-	"changedProperties": {
-		"body": ["changedProperties()"],
-		"description": "Returns a list of the object properties that have been changed but not yet saved to the database.",
-		"prefix": "changedProperties"
-	},
-	"checkBox": {
-		"body": ["checkBox(objectName=$1, property=\"$2\")"],
-		"description": "Builds and returns a string containing a check box form control based on the supplied name. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "checkBox"
-	},
-	"checkBoxTag": {
-		"body": ["checkBoxTag(name=\"$1\")"],
-		"description": "Builds and returns a string containing a check box form control based on the supplied name. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "checkBoxTag"
-	},
-	"clearChangeInformation": {
-		"body": ["clearChangeInformation()"],
-		"description": "Clears all internal knowledge of the current state of the object.",
-		"prefix": "clearChangeInformation"
-	},
-	"clearErrors": {
-		"body": ["clearErrors()"],
-		"description": "Clears out all errors set on the object or only the ones set for a specific property or name.",
-		"prefix": "clearErrors"
-	},
-	"collection": {
-		"body": ["collection()"],
-		"description": "",
-		"prefix": "collection"
-	},
-	"columnDataForProperty": {
-		"body": ["columnDataForProperty(property=\"$1\")"],
-		"description": "Returns a struct with data for the named property..",
-		"prefix": "columnDataForProperty"
-	},
-	"columnForProperty": {
-		"body": ["columnForProperty(property=\"$1\")"],
-		"description": "Returns the column name mapped for the named model property.",
-		"prefix": "columnForProperty"
-	},
-	"columnNames": {
-		"body": ["columnNames()"],
-		"description": "Returns a list of column names in the table mapped to this model. The list is ordered according to the columns' ordinal positions in the database table.",
-		"prefix": "columnNames"
-	},
-	"columns": {
-		"body": ["columns()"],
-		"description": "Returns an array of columns names for the table associated with this class. Does not include calculated properties that will be generated by the Wheels ORM.",
-		"prefix": "columns"
-	},
-	"compareTo": {
-		"body": ["compareTo(object=$1)"],
-		"description": "Pass in another Wheels model object to see if the two objects are the same.",
-		"prefix": "compareTo"
-	},
-	"constraints": {
-		"body": ["constraints()"],
-		"description": "Set variable patterns to use for matching.",
-		"prefix": "constraints"
-	},
-	"contentFor": {
-		"body": ["contentFor()"],
-		"description": "Used to store a section's output for rendering within a layout. This content store acts as a stack, so you can store multiple pieces of content for a given section.",
-		"prefix": "contentFor"
-	},
-	"contentForLayout": {
-		"body": ["contentForLayout()"],
-		"description": "Includes content for the body section, which equates to the output generated by the view template run by the request.",
-		"prefix": "contentForLayout"
-	},
-	"controller": {
-		"body": ["controller(name=\"$1\")"],
-		"description": "Creates and returns a controller object with your own custom name and params. Used primarily for testing purposes.",
-		"prefix": "controller"
-	},
-	"count": {
-		"body": ["count()"],
-		"description": "Returns the number of rows that match the arguments (or all rows if no arguments are passed in). Uses the SQL function COUNT. If no records can be found to perform the calculation on, 0 is returned.",
-		"prefix": "count"
-	},
-	"create": {
-		"body": ["create()"],
-		"description": "Creates a new object, saves it to the database (if the validation permits it), and returns it.\nIf the validation fails, the unsaved object (with errors added to it) is still returned.\nProperty names and values can be passed in either using named arguments or as a struct to the properties argument.",
-		"prefix": "create"
-	},
-	"createMigration": {
-		"body": ["createMigration(migrationName=\"$1\")"],
-		"description": "Creates a migration file. Whilst you can use this in your application, the recommended useage is via either the CLI or the provided GUI interface",
-		"prefix": "createMigration"
-	},
-	"csrfMetaTags": {
-		"body": ["csrfMetaTags()"],
-		"description": "Include this in your layouts' <head> sections to include meta tags containing the authenticity token for use by JavaScript AJAX requests needing to POST data to your application.",
-		"prefix": "csrfMetaTags"
-	},
-	"cycle": {
-		"body": ["cycle(values=\"$1\")"],
-		"description": "Cycles through list values every time it is called.",
-		"prefix": "cycle"
-	},
-	"dataSource": {
-		"body": ["dataSource(datasource=\"$1\")"],
-		"description": "Use this method to override the data source connection information for this model.",
-		"prefix": "dataSource"
-	},
-	"dateSelect": {
-		"body": ["dateSelect()"],
-		"description": "Builds and returns a string containing three select form controls for month, day, and year based on the supplied objectName and property.",
-		"prefix": "dateSelect"
-	},
-	"dateSelectTags": {
-		"body": ["dateSelectTags(name=\"$1\")"],
-		"description": "Builds and returns a string containing three select form controls (month, day, and year) based on a name and value.",
-		"prefix": "dateSelectTags"
-	},
-	"dateTimeSelect": {
-		"body": ["dateTimeSelect(objectName=\"$1\", property=\"$2\")"],
-		"description": "Builds and returns a string containing six select form controls (three for date selection and the remaining three for time selection) based on the supplied objectName and property.",
-		"prefix": "dateTimeSelect"
-	},
-	"dateTimeSelectTags": {
-		"body": ["dateTimeSelectTags(name=\"$1\")"],
-		"description": "Builds and returns a string containing six select form controls (three for date selection and the remaining three for time selection) based on a name.",
-		"prefix": "dateTimeSelectTags"
-	},
-	"daySelectTag": {
-		"body": ["daySelectTag(name=\"$1\")"],
-		"description": "Builds and returns a string containing a select form control for the days of the week based on the supplied name.",
-		"prefix": "daySelectTag"
-	},
-	"delete": {
-		"body": ["delete()"],
-		"description": "Deletes the object, which means the row is deleted from the database (unless prevented by a beforeDelete callback). Returns true on successful deletion of the row, false otherwise.",
-		"prefix": "delete"
-	},
-	"deleteAll": {
-		"body": ["deleteAll()"],
-		"description": "Deletes all records that match the where argument. By default, objects will not be instantiated and therefore callbacks and validations are not invoked. You can change this behavior by passing in instantiate=true. Returns the number of records that were deleted.",
-		"prefix": "deleteAll"
-	},
-	"deleteByKey": {
-		"body": ["deleteByKey(key=$1)"],
-		"description": "Finds the record with the supplied key and deletes it. Returns true on successful deletion of the row, false otherwise.",
-		"prefix": "deleteByKey"
-	},
-	"deleteOne": {
-		"body": ["deleteOne()"],
-		"description": "Gets an object based on conditions and deletes it.",
-		"prefix": "deleteOne"
-	},
-	"deobfuscateParam": {
-		"body": ["deobfuscateParam(param=\"$1\")"],
-		"description": "Deobfuscates a value.",
-		"prefix": "deobfuscateParam"
-	},
-	"distanceOfTimeInWords": {
-		"body": ["distanceOfTimeInWords(fromTime=$1, toTime=$2)"],
-		"description": "Pass in two dates to this method, and it will return a string describing the difference between them.",
-		"prefix": "distanceOfTimeInWords"
-	},
-	"drawRoutes": {
-		"body": ["drawRoutes()"],
-		"description": "Use to configure your application's routes.",
-		"prefix": "drawRoutes"
-	},
-	"end": {
-		"body": ["end()"],
-		"description": "Call this to end your route configuration.",
-		"prefix": "end"
-	},
-	"endFormTag": {
-		"body": ["endFormTag()"],
-		"description": "Builds and returns a string containing the closing form tag.",
-		"prefix": "endFormTag"
-	},
-	"errorCount": {
-		"body": ["errorCount()"],
-		"description": "Returns the number of errors this object has associated with it. Specify property or name if you wish to count only specific errors.",
-		"prefix": "errorCount"
-	},
-	"errorMessageOn": {
-		"body": ["errorMessageOn(objectName=\"$1\", property=\"$2\")"],
-		"description": "Returns the error message, if one exists, on the object's property. If multiple error messages exist, the first one is returned.",
-		"prefix": "errorMessageOn"
-	},
-	"errorMessagesFor": {
-		"body": ["errorMessagesFor(objectName=\"$1\")"],
-		"description": "Builds and returns a list (ul tag with a default class of errorMessages) containing all the error messages for all the properties of the object (if any). Returns an empty string otherwise.",
-		"prefix": "errorMessagesFor"
-	},
-	"errorsOn": {
-		"body": ["errorsOn(property=\"$1\")"],
-		"description": "Returns an array of all errors associated with the supplied property (and error name if passed in).",
-		"prefix": "errorsOn"
-	},
-	"errorsOnBase": {
-		"body": ["errorsOnBase()"],
-		"description": "Returns an array of all errors associated with the object as a whole (not related to any specific property).",
-		"prefix": "errorsOnBase"
-	},
-	"excerpt": {
-		"body": ["excerpt(text=\"$1\", phrase=\"$2\")"],
-		"description": "Extracts an excerpt from text that matches the first instance of a given phrase.",
-		"prefix": "excerpt"
-	},
-	"exists": {
-		"body": ["exists()"],
-		"description": "Checks if a record exists in the table. You can pass in either a primary key value to the key argument or a string to the where argument. If you don't pass in either of those, it will simply check if any record exists in the table.",
-		"prefix": "exists"
-	},
-	"fileField": {
-		"body": ["fileField(objectName=$1, property=\"$2\")"],
-		"description": "Builds and returns a string containing a file field form control based on the supplied objectName and property. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "fileField"
-	},
-	"fileFieldTag": {
-		"body": ["fileFieldTag(name=\"$1\")"],
-		"description": "Builds and returns a string containing a file form control based on the supplied name. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "fileFieldTag"
-	},
-	"filterChain": {
-		"body": ["filterChain()"],
-		"description": "Returns an array of all the filters set on current controller in the order in which they will be executed.",
-		"prefix": "filterChain"
-	},
-	"filters": {
-		"body": ["filters(through=\"$1\")"],
-		"description": "Tells CFWheels to run a function before an action is run or after an action has been run.",
-		"prefix": "filters"
-	},
-	"findAll": {
-		"body": ["findAll()"],
-		"description": "Returns records from the database table mapped to this model according to the arguments passed in (use the where argument to decide which records to get, use the order argument to set the order in which those records should be returned, and so on). The records will be returned as either a cfquery result set, an array of objects, or an array of structs (depending on what the returnAs argument is set to).",
-		"prefix": "findAll"
-	},
-	"findAllKeys": {
-		"body": ["findAllKeys()"],
-		"description": "Returns all primary key values in a list. In addition to quoted and delimiter you can pass in any argument that findAll() accepts.",
-		"prefix": "findAllKeys"
-	},
-	"findByKey": {
-		"body": ["findByKey(key=$1)"],
-		"description": "Fetches the requested record by primary key and returns it as an object. Returns false if no record is found. You can override this behavior to return a cfquery result set instead, similar to what's described in the documentation for findOne().",
-		"prefix": "findByKey"
-	},
-	"findFirst": {
-		"body": ["findFirst()"],
-		"description": "Fetches the first record ordered by primary key value. Use the property argument to order by something else. Returns a model object.",
-		"prefix": "findFirst"
-	},
-	"findLastOne": {
-		"body": ["findLastOne()"],
-		"description": "Fetches the last record ordered by primary key value. Use the property argument to order by something else. Returns a model object.",
-		"prefix": "findLast"
-	},
-	"findOne": {
-		"body": ["findOne()"],
-		"description": "Fetches the first record found based on the WHERE and ORDER BY clauses. With the default settings (i.e. the returnAs argument set to object), a model object will be returned if the record is found and the boolean value false if not. Instead of using the where argument, you can create cleaner code by making use of a concept called Dynamic Finders.",
-		"prefix": "findOne"
-	},
-	"flash": {
-		"body": ["flash()"],
-		"description": "Returns the value of a specific key in the Flash (or the entire Flash as a struct if no key is passed in).",
-		"prefix": "flash"
-	},
-	"flashClear": {
-		"body": ["flashClear()"],
-		"description": "Deletes everything from the Flash.",
-		"prefix": "flashClear"
-	},
-	"flashCount": {
-		"body": ["flashCount()"],
-		"description": "Returns how many keys exist in the Flash.",
-		"prefix": "flashCount"
-	},
-	"flashDelete": {
-		"body": ["flashDelete(key=\"$1\")"],
-		"description": "Deletes a specific key from the Flash. Returns true if the key exists.",
-		"prefix": "flashDelete"
-	},
-	"flashInsert": {
-		"body": ["flashInsert()"],
-		"description": "Inserts a new key / value into the Flash.",
-		"prefix": "flashInsert"
-	},
-	"flashIsEmpty": {
-		"body": ["flashIsEmpty()"],
-		"description": "Returns whether or not the Flash is empty.",
-		"prefix": "flashIsEmpty"
-	},
-	"flashKeep": {
-		"body": ["flashKeep()"],
-		"description": "Make the entire Flash or specific key in it stick around for one more request.",
-		"prefix": "flashKeep"
-	},
-	"flashKeyExists": {
-		"body": ["flashKeyExists(key=\"$1\")"],
-		"description": "Checks if a specific key exists in the Flash.",
-		"prefix": "flashKeyExists"
-	},
-	"flashMessages": {
-		"body": ["flashMessages()"],
-		"description": "Displays a marked-up listing of messages that exist in the Flash.",
-		"prefix": "flashMessages"
-	},
-	"get": {
-		"body": ["get(name=\"$1\")"],
-		"description": "Returns the current setting for the supplied Wheels setting or the current default for the supplied Wheels function argument.",
-		"prefix": "get"
-	},
-	"getAvailableMigrations": {
-		"body": ["getAvailableMigrations()"],
-		"description": "Searches db/migrate folder for migrations. Whilst you can use this in your application, the recommended useage is via either the CLI or the provided GUI interface",
-		"prefix": "getAvailableMigrations"
-	},
-	"getCurrentMigrationVersion": {
-		"body": ["getCurrentMigrationVersion()"],
-		"description": "Returns current database version. Whilst you can use this in your application, the recommended useage is via either the CLI or the provided GUI interface",
-		"prefix": "getCurrentMigrationVersion"
-	},
-	"getRedirect": {
-		"body": ["getRedirect()"],
-		"description": "Mainly used for testing to establish whether the current request has performed a redirect\nPrimarily used for testing",
-		"prefix": "getRedirect"
-	},
-	"getTableNamePrefix": {
-		"body": ["getTableNamePrefix()"],
-		"description": "Returns the table name prefix set for the table.",
-		"prefix": "getTableNamePrefix"
-	},
-	"hasChanged": {
-		"body": ["hasChanged()"],
-		"description": "Returns true if the specified property (or any if none was passed in) has been changed but not yet saved to the database. Will also return true if the object is new and no record for it exists in the database.",
-		"prefix": "hasChanged"
-	},
-	"hasErrors": {
-		"body": ["hasErrors()"],
-		"description": "Returns true if the object has any errors. You can also limit to only check a specific property or name for errors.",
-		"prefix": "hasErrors"
-	},
-	"hasMany": {
-		"body": ["hasMany(name=\"$1\")"],
-		"description": "Sets up a hasMany association between this model and the specified one.",
-		"prefix": "hasMany"
-	},
-	"hasManyCheckBox": {
-		"body": [
-			"hasManyCheckBox(objectName=\"$1\", association=\"$2\", keys=\"$3\")"
-		],
-		"description": "Used as a shortcut to output the proper form elements for an association. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "hasManyCheckBox"
-	},
-	"hasManyRadioButton": {
-		"body": [
-			"hasManyRadioButton(objectName=\"$1\", association=\"$2\", property=\"$3\", keys=\"$4\", tagValue=\"$5\")"
-		],
-		"description": "Used as a shortcut to output the proper form elements for an association. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "hasManyRadioButton"
-	},
-	"hasOne": {
-		"body": ["hasOne(name=\"$1\")"],
-		"description": "Sets up a hasOne association between this model and the specified one.",
-		"prefix": "hasOne"
-	},
-	"hasProperty": {
-		"body": ["hasProperty(property=\"$1\")"],
-		"description": "Returns true if the specified property name exists on the model.",
-		"prefix": "hasProperty"
-	},
-	"hiddenField": {
-		"body": ["hiddenField(objectName=$1, property=\"$2\")"],
-		"description": "Builds and returns a string containing a hidden field form control based on the supplied objectName and property. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "hiddenField"
-	},
-	"hiddenFieldTag": {
-		"body": ["hiddenFieldTag(name=\"$1\")"],
-		"description": "Builds and returns a string containing a hidden field form control based on the supplied name. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "hiddenFieldTag"
-	},
-	"highlight": {
-		"body": ["highlight(text=\"$1\", phrases=\"$2\")"],
-		"description": "Highlights the phrase(s) everywhere in the text if found by wrapping it in a span tag.",
-		"prefix": "highlight"
-	},
-	"hourSelectTag": {
-		"body": ["hourSelectTag(name=\"$1\")"],
-		"description": "Builds and returns a string containing one select form control for the hours of the day based on the supplied name.",
-		"prefix": "hourSelectTag"
-	},
-	"humanize": {
-		"body": ["humanize(text=\"$1\")"],
-		"description": "Returns readable text by capitalizing and converting camel casing to multiple words.",
-		"prefix": "humanize"
-	},
-	"hyphenize": {
-		"body": ["hyphenize(string=\"$1\")"],
-		"description": "Converts camelCase strings to lowercase strings with hyphens as word delimiters instead. Example: myVariable becomes my-variable.",
-		"prefix": "hyphenize"
-	},
-	"imageTag": {
-		"body": ["imageTag(source=\"$1\")"],
-		"description": "Returns an img tag.\nIf the image is stored in the local images folder, the tag will also set the width, height, and alt attributes for you.\nYou can pass any additional arguments (e.g. class, rel, id), and the generated tag will also include those values as HTML attributes.",
-		"prefix": "imageTag"
-	},
-	"includeContent": {
-		"body": ["includeContent()"],
-		"description": "Used to output the content for a particular section in a layout.",
-		"prefix": "includeContent"
-	},
-	"includeLayout": {
-		"body": ["includeLayout()"],
-		"description": "Includes the contents of another layout file. This is usually used to include a parent layout from within a child layout.",
-		"prefix": "includeLayout"
-	},
-	"includePartial": {
-		"body": ["includePartial(partial=$1)"],
-		"description": "Includes the specified partial file in the view. Similar to using cfinclude but with the ability to cache the result and use Wheels-specific file look-up. By default, CFWheels will look for the file in the current controller's view folder. To include a file relative from the base views folder, you can start the path supplied to name with a forward slash.",
-		"prefix": "includePartial"
-	},
-	"includedInObject": {
-		"body": [
-			"includedInObject(objectName=\"$1\", association=\"$2\", keys=\"$3\")"
-		],
-		"description": "Used as a shortcut to check if the specified IDs are a part of the main form object. This method should only be used for hasMany associations.",
-		"prefix": "includedInObject"
-	},
-	"invokeWithTransaction": {
-		"body": ["invokeWithTransaction(method=\"$1\")"],
-		"description": "Runs the specified method within a single database transaction.",
-		"prefix": "invokeWithTransaction"
-	},
-	"isAjax": {
-		"body": ["isAjax()"],
-		"description": "Returns whether the page was called from JavaScript or not.",
-		"prefix": "isAjax"
-	},
-	"isClass": {
-		"body": ["isClass()"],
-		"description": "Use this method within a model's method to check whether you are currently in a class-level object.",
-		"prefix": "isClass"
-	},
-	"isDelete": {
-		"body": ["isDelete()"],
-		"description": "Returns whether the request was a DELETE request or not.",
-		"prefix": "isDelete"
-	},
-	"isGet": {
-		"body": ["isGet()"],
-		"description": "Returns whether the request was a normal GET request or not.",
-		"prefix": "isGet"
-	},
-	"isHead": {
-		"body": ["isHead()"],
-		"description": "Returns whether the request was a HEAD request or not.",
-		"prefix": "isHead"
-	},
-	"isInstance": {
-		"body": ["isInstance()"],
-		"description": "Use this method to check whether you are currently in an instance object.",
-		"prefix": "isInstance"
-	},
-	"isNew": {
-		"body": ["isNew()"],
-		"description": "Returns true if this object hasn't been saved yet. (In other words, no matching record exists in the database yet.) Returns false if a record exists.",
-		"prefix": "isNew"
-	},
-	"isOptions": {
-		"body": ["isOptions()"],
-		"description": "Returns whether the request was a OPTIONS request or not.",
-		"prefix": "isOptions"
-	},
-	"isPatch": {
-		"body": ["isPatch()"],
-		"description": "Returns whether the request was a PATCH request or not.",
-		"prefix": "isPatch"
-	},
-	"isPersisted": {
-		"body": ["isPersisted()"],
-		"description": "Returns true if this object has been persisted to the database or was loaded from the database via a finder. Returns false if the record has not been persisted to the database.",
-		"prefix": "isPersisted"
-	},
-	"isPost": {
-		"body": ["isPost()"],
-		"description": "Returns whether the request came from a form POST submission or not.",
-		"prefix": "isPost"
-	},
-	"isPut": {
-		"body": ["isPut()"],
-		"description": "Returns whether the request was a PUT request or not.",
-		"prefix": "isPut"
-	},
-	"isSecure": {
-		"body": ["isSecure()"],
-		"description": "Returns whether CFWheels is communicating over a secure port.",
-		"prefix": "isSecure"
-	},
-	"javaScriptIncludeTag": {
-		"body": ["javaScriptIncludeTag()"],
-		"description": "Returns a script tag for a JavaScript file (or several) based on the supplied arguments.",
-		"prefix": "javaScriptIncludeTag"
-	},
-	"key": {
-		"body": ["key()"],
-		"description": "Returns the value of the primary key for the object. If you have a single primary key named id, then someObject.key() is functionally equivalent to someObject.id. This method is more useful when you do dynamic programming and don't know the name of the primary key or when you use composite keys (in which case it's convenient to use this method to get a list of both key values returned).",
-		"prefix": "key"
-	},
-	"linkTo": {
-		"body": ["linkTo()"],
-		"description": "Creates a link to another page in your application. Pass in the name of a route to use your configured routes or a controller/action/key combination. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "linkTo"
-	},
-	"mailTo": {
-		"body": ["mailTo(emailAddress=\"$1\")"],
-		"description": "Creates a mailto link tag to the specified email address, which is also used as the name of the link unless name is specified.",
-		"prefix": "mailTo"
-	},
-	"maximum": {
-		"body": ["maximum(property=\"$1\")"],
-		"description": "Calculates the maximum value for a given property. Uses the SQL function MAX. If no records can be found to perform the calculation on you can use the ifNull argument to decide what should be returned.",
-		"prefix": "maximum"
-	},
-	"member": {
-		"body": ["member()"],
-		"description": "",
-		"prefix": "member"
-	},
-	"migrateTo": {
-		"body": ["migrateTo()"],
-		"description": "Migrates database to a specified version. Whilst you can use this in your application, the recommended useage is via either the CLI or the provided GUI interface",
-		"prefix": "migrateTo"
-	},
-	"mimeTypes": {
-		"body": ["mimeTypes(extension=\"$1\")"],
-		"description": "Returns an associated MIME type based on a file extension.",
-		"prefix": "mimeTypes"
-	},
-	"minimum": {
-		"body": ["minimum(property=\"$1\")"],
-		"description": "Calculates the minimum value for a given property. Uses the SQL function MIN. If no records can be found to perform the calculation on you can use the ifNull argument to decide what should be returned.",
-		"prefix": "minimum"
-	},
-	"minuteSelectTag": {
-		"body": ["minuteSelectTag(name=\"$1\")"],
-		"description": "Builds and returns a string containing one select form control for the minutes of an hour based on the supplied name.",
-		"prefix": "minuteSelectTag"
-	},
-	"model": {
-		"body": ["model(name=\"$1\")"],
-		"description": "Returns a reference to the requested model so that class level methods can be called on it.",
-		"prefix": "model"
-	},
-	"monthSelectTag": {
-		"body": ["monthSelectTag(name=\"$1\")"],
-		"description": "Builds and returns a string containing a select form control for the months of the year based on the supplied name.",
-		"prefix": "monthSelectTag"
-	},
-	"namespace": {
-		"body": ["namespace(module=\"$1\")"],
-		"description": "",
-		"prefix": "namespace"
-	},
-	"nestedProperties": {
-		"body": ["nestedProperties()"],
-		"description": "Allows for nested objects, structs, and arrays to be set from params and other generated data.",
-		"prefix": "nestedProperties"
-	},
-	"new": {
-		"body": ["new()"],
-		"description": "Creates a new object based on supplied properties and returns it.\nThe object is not saved to the database, it only exists in memory.\nProperty names and values can be passed in either using named arguments or as a struct to the properties argument.",
-		"prefix": "new"
-	},
-	"obfuscateParam": {
-		"body": ["obfuscateParam(param=$1)"],
-		"description": "Obfuscates a value. Typically used for hiding primary key values when passed along in the URL.",
-		"prefix": "obfuscateParam"
-	},
-	"onMissingMethod": {
-		"body": [
-			"onMissingMethod(missingMethodName=\"$1\", missingMethodArguments=$2)"
-		],
-		"description": "This function is not designed to be called directly from your code, but provides functionality for dyanmic finders such as findOneByEmail()",
-		"prefix": "onMissingMethod"
-	},
-	"onlyProvides": {
-		"body": ["onlyProvides()"],
-		"description": "Use this in an individual controller action to define which formats the action will respond with. This can be used to define provides behavior in individual actions or to override a global setting set with provides in the controller's init().",
-		"prefix": "onlyProvides"
-	},
-	"pagination": {
-		"body": ["pagination()"],
-		"description": "Returns a struct with information about the specificed paginated query. The keys that will be included in the struct are currentPage, totalPages and totalRecords.",
-		"prefix": "pagination"
-	},
-	"paginationLinks": {
-		"body": ["paginationLinks()"],
-		"description": "Builds and returns a string containing links to pages based on a paginated query. Uses linkTo() internally to build the link, so you need to pass in a route name or a controller/action/key combination. All other linkTo() arguments can be supplied as well, in which case they are passed through directly to linkTo(). If you have paginated more than one query in the controller, you can use the handle argument to reference them. (Don't forget to pass in a handle to the findAll() function in your controller first.)",
-		"prefix": "paginationLinks"
-	},
-	"passwordField": {
-		"body": ["passwordField(objectName=$1, property=\"$2\")"],
-		"description": "Builds and returns a string containing a password field form control based on the supplied objectName and property. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "passwordField"
-	},
-	"passwordFieldTag": {
-		"body": ["passwordFieldTag(name=\"$1\")"],
-		"description": "Builds and returns a string containing a password field form control based on the supplied name. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "passwordFieldTag"
-	},
-	"patch": {
-		"body": ["patch()"],
-		"description": "Match a PATCH url.",
-		"prefix": "patch"
-	},
-	"pluralize": {
-		"body": ["pluralize(word=\"$1\")"],
-		"description": "Returns the plural form of the passed in word. Can also pluralize a word based on a value passed to the count argument.",
-		"prefix": "pluralize"
-	},
-	"post": {
-		"body": ["post()"],
-		"description": "Match a POST url.",
-		"prefix": "post"
-	},
-	"primaryKey": {
-		"body": ["primaryKey()"],
-		"description": "Returns the name of the primary key for this model's table. This is determined through database introspection. If composite primary keys have been used, they will both be returned in a list. This function is also aliased as primaryKeys().",
-		"prefix": "primaryKey"
-	},
-	"primaryKeys": {
-		"body": ["primaryKeys()"],
-		"description": "Alias for primaryKey(). Use this for better readability when you're accessing multiple primary keys.",
-		"prefix": "primaryKeys"
-	},
-	"processRequest": {
-		"body": ["processRequest(params=$1)"],
-		"description": "Creates a controller and calls an action on it.\nWhich controller and action that's called is determined by the params passed in.\nReturns the result of the request either as a string or in a struct with body, status and type.\nPrimarily used for testing purposes.",
-		"prefix": "processRequest"
-	},
-	"properties": {
-		"body": ["properties()"],
-		"description": "Returns a structure of all the properties with their names as keys and the values of the property as values.",
-		"prefix": "properties"
-	},
-	"property": {
-		"body": ["property(name=\"$1\")"],
-		"description": "Use this method to map an object property to either a table column with a different name than the property or to a SQL expression. You only need to use this method when you want to override the default object relational mapping that Wheels performs.",
-		"prefix": "property"
-	},
-	"propertyIsBlank": {
-		"body": ["propertyIsBlank(property=\"$1\")"],
-		"description": "Returns true if the specified property doesn't exist on the model or is an empty string.\nThis method is the inverse of propertyIsPresent().",
-		"prefix": "propertyIsBlank"
-	},
-	"propertyIsPresent": {
-		"body": ["propertyIsPresent(property=\"$1\")"],
-		"description": "Returns true if the specified property exists on the model and is not a blank string.",
-		"prefix": "propertyIsPresent"
-	},
-	"propertyNames": {
-		"body": ["propertyNames()"],
-		"description": "Returns a list of property names ordered by their respective column's ordinal position in the database table. Also includes calculated property names that will be generated by the Wheels ORM.",
-		"prefix": "propertyNames"
-	},
-	"protectedProperties": {
-		"body": ["protectedProperties()"],
-		"description": "Use this method to specify which properties cannot be set through mass assignment.",
-		"prefix": "protectedProperties"
-	},
-	"protectsFromForgery": {
-		"body": ["protectsFromForgery()"],
-		"description": "Tells CFWheels to protect POSTed requests from CSRF vulnerabilities. Instructs the controller to verify that params.authenticityToken or X-CSRF-Token HTTP header is provided along with the request containing a valid authenticity token. Call this method within a controller's init method, preferably the base Controller.cfc\t file, to protect the entire application.",
-		"prefix": "protectsFromForgery"
-	},
-	"provides": {
-		"body": ["provides()"],
-		"description": "Defines formats that the controller will respond with upon request. The format can be requested through a URL variable called format, by appending the format name to the end of a URL as an extension (when URL rewriting is enabled), or in the request header.",
-		"prefix": "provides"
-	},
-	"put": {
-		"body": ["put()"],
-		"description": "Match a PUT url.",
-		"prefix": "put"
-	},
-	"radioButton": {
-		"body": ["radioButton(objectName=$1, property=\"$2\")"],
-		"description": "Builds and returns a string containing a radio button form control based on the supplied objectName and property. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "radioButton"
-	},
-	"radioButtonTag": {
-		"body": ["radioButtonTag(name=\"$1\", value=\"$2\")"],
-		"description": "Builds and returns a string containing a radio button form control based on the supplied name. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "radioButtonTag"
-	},
-	"redirectTo": {
-		"body": ["redirectTo()"],
-		"description": "Redirects the browser to the supplied controller/action/key, route or back to the referring page. Internally, this function uses the URLFor function to build the link and the cflocation tag to perform the redirect.",
-		"prefix": "redirectTo"
-	},
-	"reload": {
-		"body": ["reload()"],
-		"description": "Reloads the property values of this object from the database.",
-		"prefix": "reload"
-	},
-	"renderNothing": {
-		"body": ["renderNothing()"],
-		"description": "Instructs the controller to render an empty string when it's finished processing the action. This is very similar to calling cfabort with the advantage that any after filters you have set on the action will still be run.",
-		"prefix": "renderNothing"
-	},
-	"renderPage": {
-		"body": ["renderPage()"],
-		"description": "Instructs the controller which view template and layout to render when it's finished processing the action. Note that when passing values for controller and/or action, this function does not execute the actual action but rather just loads the corresponding view template.",
-		"prefix": "renderPage"
-	},
-	"renderPartial": {
-		"body": ["renderPartial(partial=\"$1\")"],
-		"description": "Instructs the controller to render a partial when it's finished processing the action.",
-		"prefix": "renderPartial"
-	},
-	"renderText": {
-		"body": ["renderText(text=$1)"],
-		"description": "Instructs the controller to render specified text when it's finished processing the action.",
-		"prefix": "renderText"
-	},
-	"renderWith": {
-		"body": ["renderWith(data=$1)"],
-		"description": "Instructs the controller to render the data passed in to the format that is requested. If the format requested is json or xml, CFWheels will transform the data into that format automatically. For other formats (or to override the automatic formatting), you can also create a view template in this format: nameofaction.xml.cfm, nameofaction.json.cfm, nameofaction.pdf.cfm, etc.",
-		"prefix": "renderWith"
-	},
-	"resetCycle": {
-		"body": ["resetCycle()"],
-		"description": "Resets a cycle so that it starts from the first list value the next time it is called.",
-		"prefix": "resetCycle"
-	},
-	"resource": {
-		"body": ["resource(name=\"$1\")"],
-		"description": "Set up a singular REST resource.",
-		"prefix": "resource"
-	},
-	"resources": {
-		"body": ["resources(name=\"$1\")"],
-		"description": "Set up a plural REST resource.",
-		"prefix": "resources"
-	},
-	"response": {
-		"body": ["response()"],
-		"description": "Returns content that CFWheels will send to the client in response to the request.",
-		"prefix": "response"
-	},
-	"root": {
-		"body": ["root()"],
-		"description": "Match a root directory.",
-		"prefix": "root"
-	},
-	"save": {
-		"body": ["save()"],
-		"description": "Saves the object if it passes validation and callbacks.\nReturns true if the object was saved successfully to the database, false if not.",
-		"prefix": "save"
-	},
-	"scope": {
-		"body": ["scope()"],
-		"description": "Set certain parameters for future calls.",
-		"prefix": "scope"
-	},
-	"secondSelectTag": {
-		"body": ["secondSelectTag(name=\"$1\")"],
-		"description": "Builds and returns a string containing one select form control for the seconds of a minute based on the supplied name.",
-		"prefix": "secondSelectTag"
-	},
-	"select": {
-		"body": ["select(objectName=$1, property=\"$2\")"],
-		"description": "Builds and returns a string containing a select form control based on the supplied objectName and property. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "select"
-	},
-	"selectTag": {
-		"body": ["selectTag(name=\"$1\", options=$2)"],
-		"description": "Builds and returns a string containing a select form control based on the supplied name and options. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "selectTag"
-	},
-	"sendEmail": {
-		"body": ["sendEmail()"],
-		"description": "Sends an email using a template and an optional layout to wrap it in. Besides the CFWheels-specific arguments documented here, you can also pass in any argument that is accepted by the cfmail tag as well as your own arguments to be used by the view.",
-		"prefix": "sendEmail"
-	},
-	"sendFile": {
-		"body": ["sendFile(file=\"$1\")"],
-		"description": "Sends a file to the user (from the files folder or a path relative to it by default).",
-		"prefix": "sendFile"
-	},
-	"set": {
-		"body": ["set()"],
-		"description": "Use to configure a global setting or set a default for a function.",
-		"prefix": "set"
-	},
-	"setFilterChain": {
-		"body": ["setFilterChain(chain=$1)"],
-		"description": "Use this function if you need a more low level way of setting the entire filter chain for a controller.",
-		"prefix": "setFilterChain"
-	},
-	"setPagination": {
-		"body": ["setPagination(totalRecords=$1)"],
-		"description": "Allows you to set a pagination handle for a custom query so you can perform pagination on it in your view with paginationLinks.",
-		"prefix": "setPagination"
-	},
-	"setPrimaryKey": {
-		"body": ["setPrimaryKey(property=\"$1\")"],
-		"description": "Allows you to pass in the name(s) of the property(s) that should be used as the primary key(s). Pass as a list if defining a composite primary key. Also aliased as setPrimaryKeys().",
-		"prefix": "setPrimaryKey"
-	},
-	"setPrimaryKeys": {
-		"body": ["setPrimaryKeys(property=\"$1\")"],
-		"description": "Alias for setPrimaryKey(). Use this for better readability when you're setting multiple properties as the primary key.",
-		"prefix": "setPrimaryKeys"
-	},
-	"setProperties": {
-		"body": ["setProperties()"],
-		"description": "Allows you to set all the properties of an object at once by passing in a structure with keys matching the property names.",
-		"prefix": "setProperties"
-	},
-	"setResponse": {
-		"body": ["setResponse(content=\"$1\")"],
-		"description": "Sets content that CFWheels will send to the client in response to the request.",
-		"prefix": "setResponse"
-	},
-	"setTableNamePrefix": {
-		"body": ["setTableNamePrefix(prefix=\"$1\")"],
-		"description": "Sets a prefix to prepend to the table name when this model runs SQL queries.",
-		"prefix": "setTableNamePrefix"
-	},
-	"setVerificationChain": {
-		"body": ["setVerificationChain(chain=$1)"],
-		"description": "Use this function if you need a more low level way of setting the entire verification chain for a controller.",
-		"prefix": "setVerificationChain"
-	},
-	"simpleFormat": {
-		"body": ["simpleFormat(text=\"$1\")"],
-		"description": "Replaces single newline characters with HTML break tags and double newline characters with HTML paragraph tags (properly closed to comply with XHTML standards).",
-		"prefix": "simpleFormat"
-	},
-	"singularize": {
-		"body": ["singularize(word=\"$1\")"],
-		"description": "Returns the singular form of the passed in word.",
-		"prefix": "singularize"
-	},
-	"startFormTag": {
-		"body": ["startFormTag()"],
-		"description": "Builds and returns a string containing the opening form tag. The form's action will be built according to the same rules as URLFor. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "startFormTag"
-	},
-	"stripLinks": {
-		"body": ["stripLinks(html=\"$1\")"],
-		"description": "Removes all links from an HTML string, leaving just the link text.",
-		"prefix": "stripLinks"
-	},
-	"stripTags": {
-		"body": ["stripTags(html=\"$1\")"],
-		"description": "Removes all HTML tags from a string.",
-		"prefix": "stripTags"
-	},
-	"styleSheetLinkTag": {
-		"body": ["styleSheetLinkTag()"],
-		"description": "Returns a link tag for a stylesheet (or several) based on the supplied arguments.",
-		"prefix": "styleSheetLinkTag"
-	},
-	"submitTag": {
-		"body": ["submitTag()"],
-		"description": "Builds and returns a string containing a submit button form control. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "submitTag"
-	},
-	"sum": {
-		"body": ["sum(property=\"$1\")"],
-		"description": "Calculates the sum of values for a given property. Uses the SQL function SUM. If no records can be found to perform the calculation on you can use the ifNull argument to decide what should be returned.",
-		"prefix": "sum"
-	},
-	"table": {
-		"body": ["table(name=$1)"],
-		"description": "Use this method to tell Wheels what database table to connect to for this model. You only need to use this method when your table naming does not follow the standard Wheels convention of a singular object name mapping to a plural table name. To not use a table for your model at all, call table(false).",
-		"prefix": "table"
-	},
-	"tableName": {
-		"body": ["tableName()"],
-		"description": "Returns the name of the database table that this model is mapped to.",
-		"prefix": "tableName"
-	},
-	"textArea": {
-		"body": ["textArea(objectName=$1, property=\"$2\")"],
-		"description": "Builds and returns a string containing a text area field form control based on the supplied objectName and property. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "textArea"
-	},
-	"textAreaTag": {
-		"body": ["textAreaTag(name=\"$1\")"],
-		"description": "Builds and returns a string containing a text area form control based on the supplied name. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "textAreaTag"
-	},
-	"textField": {
-		"body": ["textField(objectName=$1, property=\"$2\")"],
-		"description": "Builds and returns a string containing a text field form control based on the supplied objectName and property. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "textField"
-	},
-	"textFieldTag": {
-		"body": ["textFieldTag(name=\"$1\")"],
-		"description": "Builds and returns a string containing a text field form control based on the supplied name. Note: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
-		"prefix": "textFieldTag"
-	},
-	"timeAgoInWords": {
-		"body": ["timeAgoInWords(fromTime=$1)"],
-		"description": "Returns a string describing the approximate time difference between the date passed in and the current date.",
-		"prefix": "timeAgoInWords"
-	},
-	"timeSelect": {
-		"body": ["timeSelect()"],
-		"description": "Builds and returns a string containing three select form controls for hour, minute, and second based on the supplied objectName and property.",
-		"prefix": "timeSelect"
-	},
-	"timeSelectTags": {
-		"body": ["timeSelectTags(name=\"$1\")"],
-		"description": "Builds and returns a string containing three select form controls for hour, minute, and second based on name.",
-		"prefix": "timeSelectTags"
-	},
-	"timeUntilInWords": {
-		"body": ["timeUntilInWords(toTime=$1)"],
-		"description": "Returns a string describing the approximate time difference between the current date and the date passed in.",
-		"prefix": "timeUntilInWords"
-	},
-	"titleize": {
-		"body": ["titleize(word=\"$1\")"],
-		"description": "Capitalizes all words in the text to create a nicer looking title.",
-		"prefix": "titleize"
-	},
-	"toXHTML": {
-		"body": ["toXHTML(text=\"$1\")"],
-		"description": "Returns an XHTML-compliant string.",
-		"prefix": "toXHTML"
-	},
-	"toggle": {
-		"body": ["toggle(property=\"$1\")"],
-		"description": "Assigns to the property specified the opposite of the property's current boolean value. Throws an error if the property cannot be converted to a boolean value. Returns this object if save called internally is false.",
-		"prefix": "toggle"
-	},
-	"truncate": {
-		"body": ["truncate(text=\"$1\")"],
-		"description": "Truncates text to the specified length and replaces the last characters with the specified truncate string (which defaults to \"...\").",
-		"prefix": "truncate"
-	},
-	"update": {
-		"body": ["update()"],
-		"description": "Updates the object with the supplied properties and saves it to the database. Returns true if the object was saved successfully to the database and false otherwise.",
-		"prefix": "update"
-	},
-	"updateAll": {
-		"body": ["updateAll()"],
-		"description": "Updates all properties for the records that match the where argument. Property names and values can be passed in either using named arguments or as a struct to the properties argument. By default, objects will not be instantiated and therefore callbacks and validations are not invoked. You can change this behavior by passing in instantiate=true. This method returns the number of records that were updated.",
-		"prefix": "updateAll"
-	},
-	"updateByKey": {
-		"body": ["updateByKey(key=$1)"],
-		"description": "Finds the object with the supplied key and saves it (if validation permits it) with the supplied properties and/or named arguments. Property names and values can be passed in either using named arguments or as a struct to the properties argument. Returns true if the object was found and updated successfully, false otherwise.",
-		"prefix": "updateByKey"
-	},
-	"updateOne": {
-		"body": ["updateOne()"],
-		"description": "Gets an object based on the arguments used and updates it with the supplied properties. Returns true if an object was found and updated successfully, false otherwise.",
-		"prefix": "updateOne"
-	},
-	"updateProperty": {
-		"body": ["updateProperty()"],
-		"description": "Updates a single property and saves the record without going through the normal validation procedure. This is especially useful for boolean flags on existing records.",
-		"prefix": "updateProperty"
-	},
-	"usesLayout": {
-		"body": ["usesLayout(template=\"$1\")"],
-		"description": "Used within a controller's init() function to specify controller- or action-specific layouts.",
-		"prefix": "usesLayout"
-	},
-	"valid": {
-		"body": ["valid()"],
-		"description": "Runs the validation on the object and returns true if it passes it. Wheels will run the validation process automatically whenever an object is saved to the database, but sometimes it's useful to be able to run this method to see if the object is valid without saving it to the database.",
-		"prefix": "valid"
-	},
-	"validate": {
-		"body": ["validate()"],
-		"description": "Registers method(s) that should be called to validate objects before they are saved.",
-		"prefix": "validate"
-	},
-	"validateOnCreate": {
-		"body": ["validateOnCreate()"],
-		"description": "Registers method(s) that should be called to validate new objects before they are inserted.",
-		"prefix": "validateOnCreate"
-	},
-	"validateOnUpdate": {
-		"body": ["validateOnUpdate()"],
-		"description": "Registers method(s) that should be called to validate existing objects before they are updated.",
-		"prefix": "validateOnUpdate"
-	},
-	"validatesConfirmationOf": {
-		"body": ["validatesConfirmationOf()"],
-		"description": "Validates that the value of the specified property also has an identical confirmation value. (This is common when having a user type in their email address a second time to confirm, confirming a password by typing it a second time, etc.) The confirmation value only exists temporarily and never gets saved to the database. By convention, the confirmation property has to be named the same as the property with \"Confirmation\" appended at the end. Using the password example, to confirm our password property, we would create a property called passwordConfirmation.",
-		"prefix": "validatesConfirmationOf"
-	},
-	"validatesExclusionOf": {
-		"body": ["validatesExclusionOf(list=\"$2\")"],
-		"description": "Validates that the value of the specified property does not exist in the supplied list.",
-		"prefix": "validatesExclusionOf"
-	},
-	"validatesFormatOf": {
-		"body": ["validatesFormatOf()"],
-		"description": "Validates that the value of the specified property is formatted correctly by matching it against a regular expression using the regEx argument and/or against a built-in CFML validation type using the type argument (creditcard, date, email, etc.).",
-		"prefix": "validatesFormatOf"
-	},
-	"validatesInclusionOf": {
-		"body": ["validatesInclusionOf(list=\"$2\")"],
-		"description": "Validates that the value of the specified property exists in the supplied list.",
-		"prefix": "validatesInclusionOf"
-	},
-	"validatesLengthOf": {
-		"body": ["validatesLengthOf()"],
-		"description": "Validates that the value of the specified property matches the length requirements supplied. Use the exactly, maximum, minimum and within arguments to specify the length requirements.",
-		"prefix": "validatesLengthOf"
-	},
-	"validatesNumericalityOf": {
-		"body": ["validatesNumericalityOf()"],
-		"description": "Validates that the value of the specified property is numeric.",
-		"prefix": "validatesNumericalityOf"
-	},
-	"validatesPresenceOf": {
-		"body": ["validatesPresenceOf()"],
-		"description": "Validates that the specified property exists and that its value is not blank.",
-		"prefix": "validatesPresenceOf"
-	},
-	"validatesUniquenessOf": {
-		"body": ["validatesUniquenessOf()"],
-		"description": "Validates that the value of the specified property is unique in the database table. Useful for ensuring that two users can't sign up to a website with identical usernames for example. When a new record is created, a check is made to make sure that no record already exists in the database table with the given value for the specified property. When the record is updated, the same check is made but disregarding the record itself.",
-		"prefix": "validatesUniquenessOf"
-	},
-	"validationTypeForProperty": {
-		"body": ["validationTypeForProperty(property=\"$1\")"],
-		"description": "Returns the validation type for the property",
-		"prefix": "validationTypeForProperty"
-	},
-	"verificationChain": {
-		"body": ["verificationChain()"],
-		"description": "Returns an array of all the verifications set on this controller in the order in which they will be executed.",
-		"prefix": "verificationChain"
-	},
-	"verifies": {
-		"body": ["verifies()"],
-		"description": "Instructs CFWheels to verify that some specific criterias are met before running an action. Note that all undeclared arguments will be passed to redirectTo() call if a handler is not specified.",
-		"prefix": "verifies"
-	},
-	"wildcard": {
-		"body": ["wildcard()"],
-		"description": "Special wildcard matching generates routes with `",
-		"prefix": "wildcard"
-	},
-	"wordTruncate": {
-		"body": ["wordTruncate(text=\"$1\")"],
-		"description": "Truncates text to the specified length of words and replaces the remaining characters with the specified truncate string (which defaults to \"...\").",
-		"prefix": "wordTruncate"
-	},
-	"yearSelectTag": {
-		"body": ["yearSelectTag(name=\"$1\")"],
-		"description": "Builds and returns a string containing a select form control for a range of years based on the supplied name.",
-		"prefix": "yearSelectTag"
-	}
+  "URLFor": {
+    "body": ["URLFor()"],
+    "description": "Creates an internal URL based on supplied arguments.",
+    "prefix": "URLFor"
+  },
+  "accessibleProperties": {
+    "body": ["accessibleProperties()"],
+    "description": "Use this method to specify which properties can be set through mass assignment.",
+    "prefix": "accessibleProperties"
+  },
+  "addColumn": {
+    "body": [
+      "addColumn(table = \"$1\", columnType = \"$2\", columnName = \"$3\")"
+    ],
+    "description": "adds a column to existing table\r\nOnly available in a migration CFC",
+    "prefix": "addColumn"
+  },
+  "addError": {
+    "body": ["addError(property = \"$1\", message = \"$2\")"],
+    "description": "Adds an error on a specific property.",
+    "prefix": "addError"
+  },
+  "addErrorToBase": {
+    "body": ["addErrorToBase(message = \"$1\")"],
+    "description": "Adds an error on a specific property.",
+    "prefix": "addErrorToBase"
+  },
+  "addForeignKey": {
+    "body": [
+      "addForeignKey(table = \"$1\", referenceTable = \"$2\", column = \"$3\", referenceColumn = \"$4\")"
+    ],
+    "description": "Add a foreign key constraint to the database, using the reference name that was used to create it\r\nOnly available in a migration CFC",
+    "prefix": "addForeignKey"
+  },
+  "addFormat": {
+    "body": ["addFormat(extension = \"$1\", mimeType = \"$2\")"],
+    "description": "Adds a new MIME type to your CFWheels application for use with responding to multiple formats.",
+    "prefix": "addFormat"
+  },
+  "addIndex": {
+    "body": ["addIndex(table = \"$1\")"],
+    "description": "Add database index on a table column\r\nOnly available in a migration CFC",
+    "prefix": "addIndex"
+  },
+  "addRecord": {
+    "body": ["addRecord(table = \"$1\")"],
+    "description": "Adds a record to a table\r\nOnly available in a migration CFC",
+    "prefix": "addRecord"
+  },
+  "addReference": {
+    "body": ["addReference(table = \"$1\", referenceName = \"$2\")"],
+    "description": "Add a foreign key constraint to the database, using the reference name that was used to create it\r\nOnly available in a migration CFC",
+    "prefix": "addReference"
+  },
+  "afterCreate": {
+    "body": ["afterCreate()"],
+    "description": "Registers method(s) that should be called after a new object is created.",
+    "prefix": "afterCreate"
+  },
+  "afterDelete": {
+    "body": ["afterDelete()"],
+    "description": "Registers method(s) that should be called after an object is deleted.",
+    "prefix": "afterDelete"
+  },
+  "afterFind": {
+    "body": ["afterFind()"],
+    "description": "Registers method(s) that should be called after an existing object has been initialized (which is usually done with the findByKey or findOne method).",
+    "prefix": "afterFind"
+  },
+  "afterInitialization": {
+    "body": ["afterInitialization()"],
+    "description": "Registers method(s) that should be called after an object has been initialized.",
+    "prefix": "afterInitialization"
+  },
+  "afterNew": {
+    "body": ["afterNew()"],
+    "description": "Registers method(s) that should be called after a new object has been initialized (which is usually done with the new method).",
+    "prefix": "afterNew"
+  },
+  "afterSave": {
+    "body": ["afterSave()"],
+    "description": "Registers method(s) that should be called after an object is saved.",
+    "prefix": "afterSave"
+  },
+  "afterUpdate": {
+    "body": ["afterUpdate()"],
+    "description": "Registers method(s) that should be called after an existing object is updated.",
+    "prefix": "afterUpdate"
+  },
+  "afterValidation": {
+    "body": ["afterValidation()"],
+    "description": "Registers method(s) that should be called after an object is validated.",
+    "prefix": "afterValidation"
+  },
+  "afterValidationOnCreate": {
+    "body": ["afterValidationOnCreate()"],
+    "description": "Registers method(s) that should be called after a new object is validated.",
+    "prefix": "afterValidationOnCreate"
+  },
+  "afterValidationOnUpdate": {
+    "body": ["afterValidationOnUpdate()"],
+    "description": "Registers method(s) that should be called after an existing object is validated.",
+    "prefix": "afterValidationOnUpdate"
+  },
+  "allChanges": {
+    "body": ["allChanges()"],
+    "description": "Returns a struct detailing all changes that have been made on the object but not yet saved to the database.",
+    "prefix": "allChanges"
+  },
+  "allErrors": {
+    "body": ["allErrors()"],
+    "description": "Returns an array of all the errors on the object.",
+    "prefix": "allErrors"
+  },
+  "announce": {
+    "body": ["announce(message = \"$1\")"],
+    "description": "",
+    "prefix": "announce"
+  },
+  "authenticityToken": {
+    "body": ["authenticityToken()"],
+    "description": "Returns the raw CSRF authenticity token",
+    "prefix": "authenticityToken"
+  },
+  "authenticityTokenField": {
+    "body": ["authenticityTokenField()"],
+    "description": "Returns a hidden form field containing a new authenticity token.",
+    "prefix": "authenticityTokenField"
+  },
+  "autoLink": {
+    "body": ["autoLink(text = \"$1\")"],
+    "description": "Turns all URLs and email addresses into links.",
+    "prefix": "autoLink"
+  },
+  "automaticValidations": {
+    "body": ["automaticValidations(value = $1)"],
+    "description": "Whether or not to enable default validations for this model.",
+    "prefix": "automaticValidations"
+  },
+  "average": {
+    "body": ["average(property = \"$1\")"],
+    "description": "Calculates the average value for a given property.\r\nUses the SQL function AVG.\r\nIf no records can be found to perform the calculation on you can use the ifNull argument to decide what should be returned.",
+    "prefix": "average"
+  },
+  "beforeCreate": {
+    "body": ["beforeCreate()"],
+    "description": "Registers method(s) that should be called before a new object is created.",
+    "prefix": "beforeCreate"
+  },
+  "beforeDelete": {
+    "body": ["beforeDelete()"],
+    "description": "Registers method(s) that should be called before an object is deleted.",
+    "prefix": "beforeDelete"
+  },
+  "beforeSave": {
+    "body": ["beforeSave()"],
+    "description": "Registers method(s) that should be called before an object is saved.",
+    "prefix": "beforeSave"
+  },
+  "beforeUpdate": {
+    "body": ["beforeUpdate()"],
+    "description": "Registers method(s) that should be called before an existing object is updated.",
+    "prefix": "beforeUpdate"
+  },
+  "beforeValidation": {
+    "body": ["beforeValidation()"],
+    "description": "Registers method(s) that should be called before an object is validated.",
+    "prefix": "beforeValidation"
+  },
+  "beforeValidationOnCreate": {
+    "body": ["beforeValidationOnCreate()"],
+    "description": "Registers method(s) that should be called before a new object is validated.",
+    "prefix": "beforeValidationOnCreate"
+  },
+  "beforeValidationOnUpdate": {
+    "body": ["beforeValidationOnUpdate()"],
+    "description": "Registers method(s) that should be called before an existing object is validated.",
+    "prefix": "beforeValidationOnUpdate"
+  },
+  "belongsTo": {
+    "body": ["belongsTo(name = \"$1\")"],
+    "description": "Sets up a belongsTo association between this model and the specified one.\r\nUse this association when this model contains a foreign key referencing another model.",
+    "prefix": "belongsTo"
+  },
+  "bigInteger": {
+    "body": ["bigInteger()"],
+    "description": "Adds integer columns to table definition.",
+    "prefix": "bigInteger"
+  },
+  "binary": {
+    "body": ["binary()"],
+    "description": "Adds binary columns to table definition.",
+    "prefix": "binary"
+  },
+  "boolean": {
+    "body": ["boolean()"],
+    "description": "Adds boolean columns to table definition.",
+    "prefix": "boolean"
+  },
+  "buttonTag": {
+    "body": ["buttonTag()"],
+    "description": "Builds and returns a string containing a button form control.",
+    "prefix": "buttonTag"
+  },
+  "buttonTo": {
+    "body": ["buttonTo()"],
+    "description": "Creates a form containing a single button that submits to the URL.\r\nThe URL is built the same way as the linkTo function.",
+    "prefix": "buttonTo"
+  },
+  "caches": {
+    "body": ["caches()"],
+    "description": "Tells CFWheels to cache one or more actions.",
+    "prefix": "caches"
+  },
+  "capitalize": {
+    "body": ["capitalize(text = \"$1\")"],
+    "description": "Capitalizes all words in the text to create a nicer looking title.",
+    "prefix": "capitalize"
+  },
+  "change": {
+    "body": ["change()"],
+    "description": "alters existing table in the database",
+    "prefix": "change"
+  },
+  "changeColumn": {
+    "body": [
+      "changeColumn(table = \"$1\", columnName = \"$2\", columnType = \"$3\")"
+    ],
+    "description": "changes a column definition\r\nOnly available in a migration CFC",
+    "prefix": "changeColumn"
+  },
+  "changeTable": {
+    "body": ["changeTable(name = \"$1\")"],
+    "description": "Creates a table definition object to store modifications to table properties\r\nOnly available in a migration CFC",
+    "prefix": "changeTable"
+  },
+  "changedFrom": {
+    "body": ["changedFrom(property = \"$1\")"],
+    "description": "Returns the previous value of a property that has changed.\r\nReturns an empty string if no previous value exists.\r\nCFWheels will keep a note of the previous property value until the object is saved to the database.",
+    "prefix": "changedFrom"
+  },
+  "changedProperties": {
+    "body": ["changedProperties()"],
+    "description": "Returns a list of the object properties that have been changed but not yet saved to the database.",
+    "prefix": "changedProperties"
+  },
+  "char": {
+    "body": ["char()"],
+    "description": "adds char columns to table definition",
+    "prefix": "char"
+  },
+  "checkBox": {
+    "body": ["checkBox(objectName = $1, property = \"$2\")"],
+    "description": "Builds and returns a string containing a check box form control based on the supplied name.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "checkBox"
+  },
+  "checkBoxTag": {
+    "body": ["checkBoxTag(name = \"$1\")"],
+    "description": "Builds and returns a string containing a check box form control based on the supplied name.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "checkBoxTag"
+  },
+  "clearChangeInformation": {
+    "body": ["clearChangeInformation()"],
+    "description": "Clears all internal knowledge of the current state of the object.",
+    "prefix": "clearChangeInformation"
+  },
+  "clearErrors": {
+    "body": ["clearErrors()"],
+    "description": "Clears out all errors set on the object or only the ones set for a specific property or name.",
+    "prefix": "clearErrors"
+  },
+  "collection": {
+    "body": ["collection()"],
+    "description": "A collection route doesn't require an id because it acts on a collection of objects.\r\nphotos/search is an example of a collection route, because it acts on (and displays) a collection of objects.",
+    "prefix": "collection"
+  },
+  "column": {
+    "body": ["column(columnName = \"$1\", columnType = \"$2\")"],
+    "description": "Adds a column to table definition.",
+    "prefix": "column"
+  },
+  "columnDataForProperty": {
+    "body": ["columnDataForProperty(property = \"$1\")"],
+    "description": "Returns a struct with data for the named property.",
+    "prefix": "columnDataForProperty"
+  },
+  "columnForProperty": {
+    "body": ["columnForProperty(property = \"$1\")"],
+    "description": "Returns the column name mapped for the named model property.",
+    "prefix": "columnForProperty"
+  },
+  "columnNames": {
+    "body": ["columnNames()"],
+    "description": "Returns a list of column names in the table mapped to this model.\r\nThe list is ordered according to the columns' ordinal positions in the database table.",
+    "prefix": "columnNames"
+  },
+  "columns": {
+    "body": ["columns()"],
+    "description": "Returns an array of columns names for the table associated with this class.\r\nDoes not include calculated properties that will be generated by the CFWheels ORM.",
+    "prefix": "columns"
+  },
+  "compareTo": {
+    "body": ["compareTo(object = $1)"],
+    "description": "Pass in another model object to see if the two objects are the same.",
+    "prefix": "compareTo"
+  },
+  "constraints": {
+    "body": ["constraints()"],
+    "description": "Set variable patterns to use for matching.",
+    "prefix": "constraints"
+  },
+  "contentFor": {
+    "body": ["contentFor()"],
+    "description": "Used to store a section's output for rendering within a layout.\r\nThis content store acts as a stack, so you can store multiple pieces of content for a given section.",
+    "prefix": "contentFor"
+  },
+  "contentForLayout": {
+    "body": ["contentForLayout()"],
+    "description": "Includes content for the body section, which equates to the output generated by the view template run by the request.",
+    "prefix": "contentForLayout"
+  },
+  "controller": {
+    "body": ["controller(name = \"$1\")"],
+    "description": "Creates and returns a controller object with your own custom name and params.\r\nUsed primarily for testing purposes.",
+    "prefix": "controller"
+  },
+  "count": {
+    "body": ["count()"],
+    "description": "Returns the number of rows that match the arguments (or all rows if no arguments are passed in).\r\nUses the SQL function COUNT.\r\nIf no records can be found to perform the calculation on, 0 is returned.",
+    "prefix": "count"
+  },
+  "create": {
+    "body": ["create()"],
+    "description": "Creates a new object, saves it to the database (if the validation permits it), and returns it.\r\nIf the validation fails, the unsaved object (with errors added to it) is still returned.\r\nProperty names and values can be passed in either using named arguments or as a struct to the properties argument.",
+    "prefix": "create"
+  },
+  "createMigration": {
+    "body": ["createMigration(migrationName = \"$1\")"],
+    "description": "Creates a migration file. Whilst you can use this in your application, the recommended useage is via either the CLI or the provided GUI interface",
+    "prefix": "createMigration"
+  },
+  "createTable": {
+    "body": ["createTable(name = \"$1\")"],
+    "description": "Creates a table definition object to store table properties\r\nOnly available in a migration CFC",
+    "prefix": "createTable"
+  },
+  "createView": {
+    "body": ["createView(name = \"$1\")"],
+    "description": "Creates a view definition object to store view properties\r\nOnly available in a migration CFC",
+    "prefix": "createView"
+  },
+  "csrfMetaTags": {
+    "body": ["csrfMetaTags()"],
+    "description": "Include this in your layouts' head sections to include meta tags containing the authenticity token for use by JavaScript AJAX requests needing to POST data to your application.",
+    "prefix": "csrfMetaTags"
+  },
+  "cycle": {
+    "body": ["cycle(values = \"$1\")"],
+    "description": "Cycles through list values every time it is called.",
+    "prefix": "cycle"
+  },
+  "dataSource": {
+    "body": ["dataSource(datasource = \"$1\")"],
+    "description": "Use this method to override the data source connection information for this model.",
+    "prefix": "dataSource"
+  },
+  "date": {
+    "body": ["date()"],
+    "description": "Adds date columns to table definition.",
+    "prefix": "date"
+  },
+  "dateSelect": {
+    "body": ["dateSelect()"],
+    "description": "Builds and returns a string containing three select form controls for month, day, and year based on the supplied objectName and property.",
+    "prefix": "dateSelect"
+  },
+  "dateSelectTags": {
+    "body": ["dateSelectTags(name = \"$1\")"],
+    "description": "Builds and returns a string containing three select form controls (month, day, and year) based on a name and value.",
+    "prefix": "dateSelectTags"
+  },
+  "dateTimeSelect": {
+    "body": ["dateTimeSelect(objectName = \"$1\", property = \"$2\")"],
+    "description": "Builds and returns a string containing six select form controls (three for date selection and the remaining three for time selection) based on the supplied objectName and property.",
+    "prefix": "dateTimeSelect"
+  },
+  "dateTimeSelectTags": {
+    "body": ["dateTimeSelectTags(name = \"$1\")"],
+    "description": "Builds and returns a string containing six select form controls (three for date selection and the remaining three for time selection) based on a name.",
+    "prefix": "dateTimeSelectTags"
+  },
+  "datetime": {
+    "body": ["datetime()"],
+    "description": "adds datetime columns to table definition",
+    "prefix": "datetime"
+  },
+  "daySelectTag": {
+    "body": ["daySelectTag(name = \"$1\")"],
+    "description": "Builds and returns a string containing a select form control for the days of the week based on the supplied name.",
+    "prefix": "daySelectTag"
+  },
+  "decimal": {
+    "body": ["decimal()"],
+    "description": "adds decimal columns to table definition",
+    "prefix": "decimal"
+  },
+  "delete": {
+    "body": ["delete()"],
+    "description": "Deletes the object, which means the row is deleted from the database (unless prevented by a beforeDelete callback).\r\nReturns true on successful deletion of the row, false otherwise.",
+    "prefix": "delete"
+  },
+  "deleteAll": {
+    "body": ["deleteAll()"],
+    "description": "Deletes all records that match the where argument.\r\nBy default, objects will not be instantiated and therefore callbacks and validations are not invoked.\r\nYou can change this behavior by passing in instantiate=true.\r\nReturns the number of records that were deleted.",
+    "prefix": "deleteAll"
+  },
+  "deleteByKey": {
+    "body": ["deleteByKey(key = $1)"],
+    "description": "Finds the record with the supplied key and deletes it.\r\nReturns true on successful deletion of the row, false otherwise.",
+    "prefix": "deleteByKey"
+  },
+  "deleteOne": {
+    "body": ["deleteOne()"],
+    "description": "Gets an object based on conditions and deletes it.",
+    "prefix": "deleteOne"
+  },
+  "deobfuscateParam": {
+    "body": ["deobfuscateParam(param = \"$1\")"],
+    "description": "Deobfuscates a value.",
+    "prefix": "deobfuscateParam"
+  },
+  "distanceOfTimeInWords": {
+    "body": ["distanceOfTimeInWords(fromTime = $1, toTime = $2)"],
+    "description": "Pass in two dates to this method, and it will return a string describing the difference between them.",
+    "prefix": "distanceOfTimeInWords"
+  },
+  "down": {
+    "body": ["down()"],
+    "description": "Migrates down: will be executed when migrating your schema backward\r\nAlong with up(), these are the two main functions in any migration file\r\nOnly available in a migration CFC",
+    "prefix": "down"
+  },
+  "dropForeignKey": {
+    "body": ["dropForeignKey(table = \"$1\", keyName = \"$2\")"],
+    "description": "Drops a foreign key constraint from the database\r\nOnly available in a migration CFC",
+    "prefix": "dropForeignKey"
+  },
+  "dropReference": {
+    "body": ["dropReference(table = \"$1\", referenceName = \"$2\")"],
+    "description": "Drop a foreign key constraint from the database, using the reference name that was used to create it\r\nOnly available in a migration CFC",
+    "prefix": "dropReference"
+  },
+  "dropTable": {
+    "body": ["dropTable(name = \"$1\")"],
+    "description": "Drops a table from the database\r\nOnly available in a migration CFC",
+    "prefix": "dropTable"
+  },
+  "dropView": {
+    "body": ["dropView(name = \"$1\")"],
+    "description": "drops a view from the database\r\nOnly available in a migration CFC",
+    "prefix": "dropView"
+  },
+  "end": {
+    "body": ["end()"],
+    "description": "Call this to end a nested routing block or the entire route configuration. This method is chained on a sequence of routing mapper method calls started by mapper().",
+    "prefix": "end"
+  },
+  "endFormTag": {
+    "body": ["endFormTag()"],
+    "description": "Builds and returns a string containing the closing form tag.",
+    "prefix": "endFormTag"
+  },
+  "errorCount": {
+    "body": ["errorCount()"],
+    "description": "Returns the number of errors this object has associated with it.\r\nSpecify property or name if you wish to count only specific errors.",
+    "prefix": "errorCount"
+  },
+  "errorMessageOn": {
+    "body": ["errorMessageOn(objectName = \"$1\", property = \"$2\")"],
+    "description": "Returns the error message, if one exists, on the object's property.\r\nIf multiple error messages exist, the first one is returned.",
+    "prefix": "errorMessageOn"
+  },
+  "errorMessagesFor": {
+    "body": ["errorMessagesFor(objectName = \"$1\")"],
+    "description": "Builds and returns a list (ul tag with a default class of error-messages) containing all the error messages for all the properties of the object.\r\nReturns an empty string if no errors exist.",
+    "prefix": "errorMessagesFor"
+  },
+  "errorsOn": {
+    "body": ["errorsOn(property = \"$1\")"],
+    "description": "Returns an array of all errors associated with the supplied property (and error name if passed in).",
+    "prefix": "errorsOn"
+  },
+  "errorsOnBase": {
+    "body": ["errorsOnBase()"],
+    "description": "Returns an array of all errors associated with the object as a whole (not related to any specific property).",
+    "prefix": "errorsOnBase"
+  },
+  "excerpt": {
+    "body": ["excerpt(text = \"$1\", phrase = \"$2\")"],
+    "description": "Extracts an excerpt from text that matches the first instance of a given phrase.",
+    "prefix": "excerpt"
+  },
+  "execute": {
+    "body": ["execute(sql = \"$1\")"],
+    "description": "Executes a raw sql query\r\nOnly available in a migration CFC",
+    "prefix": "execute"
+  },
+  "exists": {
+    "body": ["exists()"],
+    "description": "Checks if a record exists in the table.\r\nYou can pass in either a primary key value to the key argument or a string to the where argument.\r\nIf you don't pass in either of those, it will simply check if any record exists in the table.",
+    "prefix": "exists"
+  },
+  "fileField": {
+    "body": ["fileField(objectName = $1, property = \"$2\")"],
+    "description": "Builds and returns a string containing a file field form control based on the supplied objectName and property.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "fileField"
+  },
+  "fileFieldTag": {
+    "body": ["fileFieldTag(name = \"$1\")"],
+    "description": "Builds and returns a string containing a file form control based on the supplied name.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "fileFieldTag"
+  },
+  "filterChain": {
+    "body": ["filterChain()"],
+    "description": "Returns an array of all the filters set on current controller in the order in which they will be executed.",
+    "prefix": "filterChain"
+  },
+  "filters": {
+    "body": ["filters(through = \"$1\")"],
+    "description": "Tells CFWheels to run a function before an action is run or after an action has been run.",
+    "prefix": "filters"
+  },
+  "findAll": {
+    "body": ["findAll()"],
+    "description": "Returns records from the database table mapped to this model according to the arguments passed in (use the where argument to decide which records to get, use the order argument to set the order in which those records should be returned, and so on).\r\nThe records will be returned as either a cfquery result set, an array of objects, or an array of structs (depending on what the returnAs argument is set to).",
+    "prefix": "findAll"
+  },
+  "findAllKeys": {
+    "body": ["findAllKeys()"],
+    "description": "Returns all primary key values in a list.\r\nIn addition to quoted and delimiter you can pass in any argument that findAll() accepts.",
+    "prefix": "findAllKeys"
+  },
+  "findByKey": {
+    "body": ["findByKey(key = $1)"],
+    "description": "Fetches the requested record by primary key and returns it as an object.\r\nReturns false if no record is found.\r\nYou can override this behavior to return a cfquery result set instead, similar to what's described in the documentation for findOne().",
+    "prefix": "findByKey"
+  },
+  "findFirst": {
+    "body": ["findFirst()"],
+    "description": "Fetches the first record ordered by primary key value.\r\nUse the property argument to order by something else.\r\nReturns a model object.",
+    "prefix": "findFirst"
+  },
+  "findLastOne": {
+    "body": ["findLastOne()"],
+    "description": "Fetches the last record ordered by primary key value.\r\nUse the property argument to order by something else.\r\nReturns a model object. Formerly known as findLast.",
+    "prefix": "findLastOne"
+  },
+  "findOne": {
+    "body": ["findOne()"],
+    "description": "Fetches the first record found based on the WHERE and ORDER BY clauses.\r\nWith the default settings (i.e. the returnAs argument set to object), a model object will be returned if the record is found and the boolean value false if not.\r\nInstead of using the where argument, you can create cleaner code by making use of a concept called Dynamic Finders.",
+    "prefix": "findOne"
+  },
+  "flash": {
+    "body": ["flash()"],
+    "description": "Returns the value of a specific key in the Flash (or the entire Flash as a struct if no key is passed in).",
+    "prefix": "flash"
+  },
+  "flashClear": {
+    "body": ["flashClear()"],
+    "description": "Deletes everything from the Flash.",
+    "prefix": "flashClear"
+  },
+  "flashCount": {
+    "body": ["flashCount()"],
+    "description": "Returns how many keys exist in the Flash.",
+    "prefix": "flashCount"
+  },
+  "flashDelete": {
+    "body": ["flashDelete(key = \"$1\")"],
+    "description": "Deletes a specific key from the Flash.\r\nReturns true if the key exists.",
+    "prefix": "flashDelete"
+  },
+  "flashInsert": {
+    "body": ["flashInsert()"],
+    "description": "Inserts a new key / value into the Flash.",
+    "prefix": "flashInsert"
+  },
+  "flashIsEmpty": {
+    "body": ["flashIsEmpty()"],
+    "description": "Returns whether or not the Flash is empty.",
+    "prefix": "flashIsEmpty"
+  },
+  "flashKeep": {
+    "body": ["flashKeep()"],
+    "description": "Make the entire Flash or specific key in it stick around for one more request.",
+    "prefix": "flashKeep"
+  },
+  "flashKeyExists": {
+    "body": ["flashKeyExists(key = \"$1\")"],
+    "description": "Checks if a specific key exists in the Flash.",
+    "prefix": "flashKeyExists"
+  },
+  "flashMessages": {
+    "body": ["flashMessages()"],
+    "description": "Displays a marked-up listing of messages that exist in the Flash.",
+    "prefix": "flashMessages"
+  },
+  "float": {
+    "body": ["float()"],
+    "description": "adds float columns to table definition",
+    "prefix": "float"
+  },
+  "get": {
+    "body": ["get(name = \"$1\")"],
+    "description": "Returns the current setting for the supplied CFWheels setting or the current default for the supplied CFWheels function argument.",
+    "prefix": "get"
+  },
+  "getAvailableMigrations": {
+    "body": ["getAvailableMigrations()"],
+    "description": "Searches db/migrate folder for migrations. Whilst you can use this in your application, the recommended useage is via either the CLI or the provided GUI interface",
+    "prefix": "getAvailableMigrations"
+  },
+  "getCurrentMigrationVersion": {
+    "body": ["getCurrentMigrationVersion()"],
+    "description": "Returns current database version. Whilst you can use this in your application, the recommended useage is via either the CLI or the provided GUI interface",
+    "prefix": "getCurrentMigrationVersion"
+  },
+  "getEmails": {
+    "body": ["getEmails()"],
+    "description": "Primarily used for testing to get information about emails sent during the request.",
+    "prefix": "getEmails"
+  },
+  "getFiles": {
+    "body": ["getFiles()"],
+    "description": "Primarily used for testing to get information about files sent during the request.",
+    "prefix": "getFiles"
+  },
+  "getRedirect": {
+    "body": ["getRedirect()"],
+    "description": "Primarily used for testing to establish whether the current request has performed a redirect.",
+    "prefix": "getRedirect"
+  },
+  "getTableNamePrefix": {
+    "body": ["getTableNamePrefix()"],
+    "description": "Returns the table name prefix set for the table.",
+    "prefix": "getTableNamePrefix"
+  },
+  "hasChanged": {
+    "body": ["hasChanged()"],
+    "description": "Returns true if the specified property (or any if none was passed in) has been changed but not yet saved to the database.\r\nWill also return true if the object is new and no record for it exists in the database.",
+    "prefix": "hasChanged"
+  },
+  "hasErrors": {
+    "body": ["hasErrors()"],
+    "description": "Returns true if the object has any errors.\r\nYou can also limit to only check a specific property or name for errors.",
+    "prefix": "hasErrors"
+  },
+  "hasMany": {
+    "body": ["hasMany(name = \"$1\")"],
+    "description": "Sets up a hasMany association between this model and the specified one.",
+    "prefix": "hasMany"
+  },
+  "hasManyCheckBox": {
+    "body": [
+      "hasManyCheckBox(objectName = \"$1\", association = \"$2\", keys = \"$3\")"
+    ],
+    "description": "Used as a shortcut to output the proper form elements for an association.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "hasManyCheckBox"
+  },
+  "hasManyRadioButton": {
+    "body": [
+      "hasManyRadioButton(objectName = \"$1\", association = \"$2\", property = \"$3\", keys = \"$4\", tagValue = \"$5\")"
+    ],
+    "description": "Used as a shortcut to output the proper form elements for an association.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "hasManyRadioButton"
+  },
+  "hasOne": {
+    "body": ["hasOne(name = \"$1\")"],
+    "description": "Sets up a hasOne association between this model and the specified one.",
+    "prefix": "hasOne"
+  },
+  "hasProperty": {
+    "body": ["hasProperty(property = \"$1\")"],
+    "description": "Returns true if the specified property name exists on the model.",
+    "prefix": "hasProperty"
+  },
+  "hiddenField": {
+    "body": ["hiddenField(objectName = $1, property = \"$2\")"],
+    "description": "Builds and returns a string containing a hidden field form control based on the supplied objectName and property.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "hiddenField"
+  },
+  "hiddenFieldTag": {
+    "body": ["hiddenFieldTag(name = \"$1\")"],
+    "description": "Builds and returns a string containing a hidden field form control based on the supplied name.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "hiddenFieldTag"
+  },
+  "highlight": {
+    "body": ["highlight(text = \"$1\")"],
+    "description": "Highlights the phrase(s) everywhere in the text if found by wrapping them in span tags.",
+    "prefix": "highlight"
+  },
+  "hourSelectTag": {
+    "body": ["hourSelectTag(name = \"$1\")"],
+    "description": "Builds and returns a string containing one select form control for the hours of the day based on the supplied name.",
+    "prefix": "hourSelectTag"
+  },
+  "humanize": {
+    "body": ["humanize(text = \"$1\")"],
+    "description": "Returns readable text by capitalizing and converting camel casing to multiple words.",
+    "prefix": "humanize"
+  },
+  "hyphenize": {
+    "body": ["hyphenize(string = \"$1\")"],
+    "description": "Converts camelCase strings to lowercase strings with hyphens as word delimiters instead. Example: myVariable becomes my-variable.",
+    "prefix": "hyphenize"
+  },
+  "imageTag": {
+    "body": ["imageTag(source = \"$1\")"],
+    "description": "Returns an img tag.\r\nIf the image is stored in the local images folder, the tag will also set the width, height, and alt attributes for you.\r\nYou can pass any additional arguments (e.g. class, rel, id), and the generated tag will also include those values as HTML attributes.",
+    "prefix": "imageTag"
+  },
+  "includeContent": {
+    "body": ["includeContent()"],
+    "description": "Used to output the content for a particular section in a layout.",
+    "prefix": "includeContent"
+  },
+  "includeLayout": {
+    "body": ["includeLayout()"],
+    "description": "Includes the contents of another layout file.\r\nThis is usually used to include a parent layout from within a child layout.",
+    "prefix": "includeLayout"
+  },
+  "includePartial": {
+    "body": ["includePartial(partial = $1)"],
+    "description": "Includes the specified partial file in the view.\r\nSimilar to using cfinclude but with the ability to cache the result and use CFWheels-specific file look-up.\r\nBy default, CFWheels will look for the file in the current controller's view folder.\r\nTo include a file relative from the base views folder, you can start the path supplied to partial with a forward slash.",
+    "prefix": "includePartial"
+  },
+  "includedInObject": {
+    "body": [
+      "includedInObject(objectName = \"$1\", association = \"$2\", keys = \"$3\")"
+    ],
+    "description": "Used as a shortcut to check if the specified IDs are a part of the main form object.\r\nThis method should only be used for hasMany associations.",
+    "prefix": "includedInObject"
+  },
+  "integer": {
+    "body": ["integer()"],
+    "description": "adds integer columns to table definition",
+    "prefix": "integer"
+  },
+  "invokeWithTransaction": {
+    "body": ["invokeWithTransaction(method = \"$1\")"],
+    "description": "Runs the specified method within a single database transaction.",
+    "prefix": "invokeWithTransaction"
+  },
+  "isAjax": {
+    "body": ["isAjax()"],
+    "description": "Returns whether the page was called from JavaScript or not.",
+    "prefix": "isAjax"
+  },
+  "isClass": {
+    "body": ["isClass()"],
+    "description": "Use this method to check whether you are currently in a class-level object.",
+    "prefix": "isClass"
+  },
+  "isDelete": {
+    "body": ["isDelete()"],
+    "description": "Returns whether the request was a DELETE request or not.",
+    "prefix": "isDelete"
+  },
+  "isGet": {
+    "body": ["isGet()"],
+    "description": "Returns whether the request was a normal GET request or not.",
+    "prefix": "isGet"
+  },
+  "isHead": {
+    "body": ["isHead()"],
+    "description": "Returns whether the request was a HEAD request or not.",
+    "prefix": "isHead"
+  },
+  "isInstance": {
+    "body": ["isInstance()"],
+    "description": "Use this method to check whether you are currently in an instance object.",
+    "prefix": "isInstance"
+  },
+  "isNew": {
+    "body": ["isNew()"],
+    "description": "Returns true if this object hasn't been saved yet (in other words, no matching record exists in the database yet).\r\nReturns false if a record exists.",
+    "prefix": "isNew"
+  },
+  "isOptions": {
+    "body": ["isOptions()"],
+    "description": "Returns whether the request was an OPTIONS request or not.",
+    "prefix": "isOptions"
+  },
+  "isPatch": {
+    "body": ["isPatch()"],
+    "description": "Returns whether the request was a PATCH request or not.",
+    "prefix": "isPatch"
+  },
+  "isPersisted": {
+    "body": ["isPersisted()"],
+    "description": "Returns true if this object has been persisted to the database or was loaded from the database via a finder.\r\nReturns false if the record has not been persisted to the database.",
+    "prefix": "isPersisted"
+  },
+  "isPost": {
+    "body": ["isPost()"],
+    "description": "Returns whether the request came from a form POST submission or not.",
+    "prefix": "isPost"
+  },
+  "isPut": {
+    "body": ["isPut()"],
+    "description": "Returns whether the request was a PUT request or not.",
+    "prefix": "isPut"
+  },
+  "isSecure": {
+    "body": ["isSecure()"],
+    "description": "Returns whether CFWheels is communicating over a secure port.",
+    "prefix": "isSecure"
+  },
+  "javaScriptIncludeTag": {
+    "body": ["javaScriptIncludeTag()"],
+    "description": "Returns a script tag for a JavaScript file (or several) based on the supplied arguments.",
+    "prefix": "javaScriptIncludeTag"
+  },
+  "key": {
+    "body": ["key()"],
+    "description": "Returns the value of the primary key for the object.\r\nIf you have a single primary key named id, then someObject.key() is functionally equivalent to someObject.id.\r\nThis method is more useful when you do dynamic programming and don't know the name of the primary key or when you use composite keys (in which case it's convenient to use this method to get a list of both key values returned).",
+    "prefix": "key"
+  },
+  "linkTo": {
+    "body": ["linkTo()"],
+    "description": "Creates a link to another page in your application.\r\nPass in the name of a route to use your configured routes or a controller/action/key combination.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "linkTo"
+  },
+  "mailTo": {
+    "body": ["mailTo(emailAddress = \"$1\")"],
+    "description": "Creates a mailto link tag to the specified email address, which is also used as the name of the link unless name is specified.",
+    "prefix": "mailTo"
+  },
+  "mapper": {
+    "body": ["mapper()"],
+    "description": "Returns the mapper object used to configure your application's routes. Usually you will use this method in config/routes.cfm to start chaining route mapping methods like resources, namespace, etc.",
+    "prefix": "mapper"
+  },
+  "maximum": {
+    "body": ["maximum(property = \"$1\")"],
+    "description": "Calculates the maximum value for a given property.\r\nUses the SQL function MAX.\r\nIf no records can be found to perform the calculation on you can use the ifNull argument to decide what should be returned.",
+    "prefix": "maximum"
+  },
+  "member": {
+    "body": ["member()"],
+    "description": "Scope routes within a nested resource which require use of the primary key as part of the URL pattern;\r\nA member route will require an ID, because it acts on a member.\r\nphotos/1/preview is an example of a member route, because it acts on (and displays) a single object.",
+    "prefix": "member"
+  },
+  "migrateTo": {
+    "body": ["migrateTo()"],
+    "description": "Migrates database to a specified version. Whilst you can use this in your application, the recommended useage is via either the CLI or the provided GUI interface",
+    "prefix": "migrateTo"
+  },
+  "migrateToLatest": {
+    "body": ["migrateToLatest()"],
+    "description": "Shortcut function to migrate to the latest version",
+    "prefix": "migrateToLatest"
+  },
+  "mimeTypes": {
+    "body": ["mimeTypes(extension = \"$1\")"],
+    "description": "Returns an associated MIME type based on a file extension.",
+    "prefix": "mimeTypes"
+  },
+  "minimum": {
+    "body": ["minimum(property = \"$1\")"],
+    "description": "Calculates the minimum value for a given property.\r\nUses the SQL function MIN.\r\nIf no records can be found to perform the calculation on you can use the ifNull argument to decide what should be returned.",
+    "prefix": "minimum"
+  },
+  "minuteSelectTag": {
+    "body": ["minuteSelectTag(name = \"$1\")"],
+    "description": "Builds and returns a string containing one select form control for the minutes of an hour based on the supplied name.",
+    "prefix": "minuteSelectTag"
+  },
+  "model": {
+    "body": ["model(name = \"$1\")"],
+    "description": "Returns a reference to the requested model so that class level methods can be called on it.",
+    "prefix": "model"
+  },
+  "monthSelectTag": {
+    "body": ["monthSelectTag(name = \"$1\")"],
+    "description": "Builds and returns a string containing a select form control for the months of the year based on the supplied name.",
+    "prefix": "monthSelectTag"
+  },
+  "namespace": {
+    "body": ["namespace(name = \"$1\")"],
+    "description": "Scopes any the controllers for any routes configured within this block to a subfolder (package) and also adds the package name to the URL.",
+    "prefix": "namespace"
+  },
+  "nestedProperties": {
+    "body": ["nestedProperties()"],
+    "description": "Allows for nested objects, structs, and arrays to be set from params and other generated data.",
+    "prefix": "nestedProperties"
+  },
+  "new": {
+    "body": ["new()"],
+    "description": "Creates a new object based on supplied properties and returns it.\r\nThe object is not saved to the database, it only exists in memory.\r\nProperty names and values can be passed in either using named arguments or as a struct to the properties argument.",
+    "prefix": "new"
+  },
+  "obfuscateParam": {
+    "body": ["obfuscateParam(param = $1)"],
+    "description": "Obfuscates a value. Typically used for hiding primary key values when passed along in the URL.",
+    "prefix": "obfuscateParam"
+  },
+  "onMissingMethod": {
+    "body": [
+      "onMissingMethod(missingMethodName = \"$1\", missingMethodArguments = $2)"
+    ],
+    "description": "This method is not designed to be called directly from your code, but provides functionality for dynamic finders such as findOneByEmail()",
+    "prefix": "onMissingMethod"
+  },
+  "onlyProvides": {
+    "body": ["onlyProvides()"],
+    "description": "Use this in an individual controller action to define which formats the action will respond with.\r\nThis can be used to define provides behavior in individual actions or to override a global setting set with provides in the controller's config().",
+    "prefix": "onlyProvides"
+  },
+  "package": {
+    "body": ["package(name = \"$1\")"],
+    "description": "Scopes any the controllers for any routes configured within this block to a subfolder (package) without adding the package name to the URL.",
+    "prefix": "package"
+  },
+  "pagination": {
+    "body": ["pagination()"],
+    "description": "Returns a struct with information about the specificed paginated query.\r\nThe keys that will be included in the struct are currentPage, totalPages and totalRecords.",
+    "prefix": "pagination"
+  },
+  "paginationLinks": {
+    "body": ["paginationLinks()"],
+    "description": "Builds and returns a string containing links to pages based on a paginated query.\r\nUses linkTo() internally to build the link, so you need to pass in a route name or a controller/action/key combination.\r\nAll other linkTo() arguments can be supplied as well, in which case they are passed through directly to linkTo().\r\nIf you have paginated more than one query in the controller, you can use the handle argument to reference them. (Don't forget to pass in a handle to the findAll() function in your controller first.)",
+    "prefix": "paginationLinks"
+  },
+  "passwordField": {
+    "body": ["passwordField(objectName = $1, property = \"$2\")"],
+    "description": "Builds and returns a string containing a password field form control based on the supplied objectName and property.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "passwordField"
+  },
+  "passwordFieldTag": {
+    "body": ["passwordFieldTag(name = \"$1\")"],
+    "description": "Builds and returns a string containing a password field form control based on the supplied name.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "passwordFieldTag"
+  },
+  "patch": {
+    "body": ["patch()"],
+    "description": "Create a route that matches a URL requiring an HTTP PATCH method. We recommend using this matcher to expose actions that update database records.",
+    "prefix": "patch"
+  },
+  "pluginNames": {
+    "body": ["pluginNames()"],
+    "description": "Returns a list of the names of all installed plugins.",
+    "prefix": "pluginNames"
+  },
+  "pluralize": {
+    "body": ["pluralize(word = \"$1\")"],
+    "description": "Returns the plural form of the passed in word. Can also pluralize a word based on a value passed to the count argument. CFWheels stores a list of words that are the same in both singular and plural form (e.g. \"equipment\", \"information\") and words that don't follow the regular pluralization rules (e.g. \"child\" / \"children\", \"foot\" / \"feet\"). Use get(\"uncountables\") / set(\"uncountables\", newList) and get(\"irregulars\") / set(\"irregulars\", newList) to modify them to suit your needs.",
+    "prefix": "pluralize"
+  },
+  "post": {
+    "body": ["post()"],
+    "description": "Create a route that matches a URL requiring an HTTP POST method. We recommend using this matcher to expose actions that create database records.",
+    "prefix": "post"
+  },
+  "primaryKey": {
+    "body": ["primaryKey(name = \"$1\")"],
+    "description": "Adds a primary key definition to the table. this method also allows for multiple primary keys.",
+    "prefix": "primaryKey"
+  },
+  "primaryKeys": {
+    "body": ["primaryKeys()"],
+    "description": "Alias for primaryKey().\r\nUse this for better readability when you're accessing multiple primary keys.",
+    "prefix": "primaryKeys"
+  },
+  "processAction": {
+    "body": ["processAction()"],
+    "description": "Process the specified action of the controller.\r\nThis is exposed in the API primarily for testing purposes; you would not usually call it directly unless in the test suite.",
+    "prefix": "processAction"
+  },
+  "processRequest": {
+    "body": ["processRequest(params = $1)"],
+    "description": "Creates a controller and calls an action on it.\r\nWhich controller and action that's called is determined by the params passed in.\r\nReturns the result of the request either as a string or in a struct with body, emails, files, flash, redirect, status, and type.\r\nPrimarily used for testing purposes.",
+    "prefix": "processRequest"
+  },
+  "properties": {
+    "body": ["properties()"],
+    "description": "Returns a structure of all the properties with their names as keys and the values of the property as values.",
+    "prefix": "properties"
+  },
+  "property": {
+    "body": ["property(name = \"$1\")"],
+    "description": "Use this method to map an object property to either a table column with a different name than the property or to a SQL expression.\r\nYou only need to use this method when you want to override the default object relational mapping that CFWheels performs.",
+    "prefix": "property"
+  },
+  "propertyIsBlank": {
+    "body": ["propertyIsBlank(property = \"$1\")"],
+    "description": "Returns true if the specified property doesn't exist on the model or is an empty string.\r\nThis method is the inverse of propertyIsPresent().",
+    "prefix": "propertyIsBlank"
+  },
+  "propertyIsPresent": {
+    "body": ["propertyIsPresent(property = \"$1\")"],
+    "description": "Returns true if the specified property exists on the model and is not a blank string.",
+    "prefix": "propertyIsPresent"
+  },
+  "propertyNames": {
+    "body": ["propertyNames()"],
+    "description": "Returns a list of property names ordered by their respective column's ordinal position in the database table.\r\nAlso includes calculated property names that will be generated by the CFWheels ORM.",
+    "prefix": "propertyNames"
+  },
+  "protectedProperties": {
+    "body": ["protectedProperties()"],
+    "description": "Use this method to specify which properties cannot be set through mass assignment.",
+    "prefix": "protectedProperties"
+  },
+  "protectsFromForgery": {
+    "body": ["protectsFromForgery()"],
+    "description": "Tells CFWheels to protect POSTed requests from CSRF vulnerabilities.\r\nInstructs the controller to verify that params.authenticityToken or X-CSRF-Token HTTP header is provided along with the request containing a valid authenticity token.\r\nCall this method within a controller's config method, preferably the base Controller.cfc file, to protect the entire application.",
+    "prefix": "protectsFromForgery"
+  },
+  "provides": {
+    "body": ["provides()"],
+    "description": "Defines formats that the controller will respond with upon request.\r\nThe format can be requested through a URL variable called format, by appending the format name to the end of a URL as an extension (when URL rewriting is enabled), or in the request header.",
+    "prefix": "provides"
+  },
+  "put": {
+    "body": ["put()"],
+    "description": "Create a route that matches a URL requiring an HTTP PUT method. We recommend using this matcher to expose actions that update database records. This method is provided as a convenience for when you really need to support the PUT verb; consider using the patch matcher instead of this one.",
+    "prefix": "put"
+  },
+  "radioButton": {
+    "body": ["radioButton(objectName = $1, property = \"$2\")"],
+    "description": "Builds and returns a string containing a radio button form control based on the supplied objectName and property.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "radioButton"
+  },
+  "radioButtonTag": {
+    "body": ["radioButtonTag(name = \"$1\", value = \"$2\")"],
+    "description": "Builds and returns a string containing a radio button form control based on the supplied name.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "radioButtonTag"
+  },
+  "redirectTo": {
+    "body": ["redirectTo()"],
+    "description": "Redirects the browser to the supplied controller/action/key, route or back to the referring page.\r\nInternally, this function uses the URLFor function to build the link and the cflocation tag to perform the redirect.",
+    "prefix": "redirectTo"
+  },
+  "redoMigration": {
+    "body": ["redoMigration()"],
+    "description": "Reruns the specified migration version. Whilst you can use this in your application, the recommended useage is via either the CLI or the provided GUI interface",
+    "prefix": "redoMigration"
+  },
+  "references": {
+    "body": ["references(referenceNames = \"$1\")"],
+    "description": "adds integer reference columns to table definition and creates foreign key constraints",
+    "prefix": "references"
+  },
+  "reload": {
+    "body": ["reload()"],
+    "description": "Reloads the property values of this object from the database.",
+    "prefix": "reload"
+  },
+  "removeColumn": {
+    "body": ["removeColumn(table = \"$1\")"],
+    "description": "Removes a column from a database table\r\nOnly available in a migration CFC",
+    "prefix": "removeColumn"
+  },
+  "removeIndex": {
+    "body": ["removeIndex(table = \"$1\", indexName = \"$2\")"],
+    "description": "Remove a database index\r\nOnly available in a migration CFC",
+    "prefix": "removeIndex"
+  },
+  "removeRecord": {
+    "body": ["removeRecord(table = \"$1\")"],
+    "description": "Removes existing records from a table\r\nOnly available in a migration CFC",
+    "prefix": "removeRecord"
+  },
+  "renameColumn": {
+    "body": [
+      "renameColumn(table = \"$1\", columnName = \"$2\", newColumnName = \"$3\")"
+    ],
+    "description": "Renames a table column\r\nOnly available in a migration CFC",
+    "prefix": "renameColumn"
+  },
+  "renameTable": {
+    "body": ["renameTable(oldName = \"$1\", newName = \"$2\")"],
+    "description": "Renames a table\r\nOnly available in a migration CFC",
+    "prefix": "renameTable"
+  },
+  "renderNothing": {
+    "body": ["renderNothing()"],
+    "description": "Instructs the controller to render an empty string when it's finished processing the action.\r\nThis is very similar to calling cfabort with the advantage that any after filters you have set on the action will still be run.",
+    "prefix": "renderNothing"
+  },
+  "renderPartial": {
+    "body": ["renderPartial(partial = \"$1\")"],
+    "description": "Instructs the controller to render a partial when it's finished processing the action.",
+    "prefix": "renderPartial"
+  },
+  "renderText": {
+    "body": ["renderText()"],
+    "description": "Instructs the controller to render specified text when it's finished processing the action.",
+    "prefix": "renderText"
+  },
+  "renderView": {
+    "body": ["renderView()"],
+    "description": "Instructs the controller which view template and layout to render when it's finished processing the action.\r\nNote that when passing values for controller and / or action, this function does not execute the actual action but rather just loads the corresponding view template.",
+    "prefix": "renderView"
+  },
+  "renderWith": {
+    "body": ["renderWith(data = $1)"],
+    "description": "Instructs the controller to render the data passed in to the format that is requested.\r\nIf the format requested is json or xml, CFWheels will transform the data into that format automatically.\r\nFor other formats (or to override the automatic formatting), you can also create a view template in this format: nameofaction.xml.cfm, nameofaction.json.cfm, nameofaction.pdf.cfm, etc.",
+    "prefix": "renderWith"
+  },
+  "resetCycle": {
+    "body": ["resetCycle()"],
+    "description": "Resets a cycle so that it starts from the first list value the next time it is called.",
+    "prefix": "resetCycle"
+  },
+  "resource": {
+    "body": ["resource(name = \"$1\")"],
+    "description": "Create a group of routes that exposes actions for manipulating a singular resource. A singular resource exposes URL patterns for the entire CRUD lifecycle of a single entity (show, new, create, edit, update, and delete) without exposing a primary key in the URL. Usually this type of resource represents a singleton entity tied to the session, application, or another resource (perhaps nested within another resource). If you need to generate routes for manipulating a collection of resources with a primary key in the URL, see the resources mapper method.",
+    "prefix": "resource"
+  },
+  "resources": {
+    "body": ["resources(name = \"$1\")"],
+    "description": "Create a group of routes that exposes actions for manipulating a collection of resources. A plural resource exposes URL patterns for the entire CRUD lifecycle (index, show, new, create, edit, update, delete), exposing a primary key in the URL for showing, editing, updating, and deleting records. If you need to generate routes for manipulating a singular resource without a primary key, see the resource mapper method.",
+    "prefix": "resources"
+  },
+  "response": {
+    "body": ["response()"],
+    "description": "Returns content that CFWheels will send to the client in response to the request.",
+    "prefix": "response"
+  },
+  "root": {
+    "body": ["root()"],
+    "description": "Create a route that matches the root of its current context. This mapper can be used for the application's web root (or home page), or it can generate a route for the root of a namespace or other path scoping mapper.",
+    "prefix": "root"
+  },
+  "save": {
+    "body": ["save()"],
+    "description": "Saves the object if it passes validation and callbacks.\r\nReturns true if the object was saved successfully to the database, false if not.",
+    "prefix": "save"
+  },
+  "scope": {
+    "body": ["scope()"],
+    "description": "Set any number of parameters to be inherited by mappers called within this matcher's block. For example, set a package or URL path to be used by all child routes.",
+    "prefix": "scope"
+  },
+  "secondSelectTag": {
+    "body": ["secondSelectTag(name = \"$1\")"],
+    "description": "Builds and returns a string containing one select form control for the seconds of a minute based on the supplied name.",
+    "prefix": "secondSelectTag"
+  },
+  "select": {
+    "body": ["select(objectName = $1, property = \"$2\")"],
+    "description": "Builds and returns a string containing a select form control based on the supplied objectName and property.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "select"
+  },
+  "selectTag": {
+    "body": ["selectTag(name = \"$1\", options = $2)"],
+    "description": "Builds and returns a string containing a select form control based on the supplied name and options.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "selectTag"
+  },
+  "sendEmail": {
+    "body": ["sendEmail()"],
+    "description": "Sends an email using a template and an optional layout to wrap it in.\r\nBesides the CFWheels-specific arguments documented here, you can also pass in any argument that is accepted by the cfmail tag as well as your own arguments to be used by the view.",
+    "prefix": "sendEmail"
+  },
+  "sendFile": {
+    "body": ["sendFile(file = \"$1\")"],
+    "description": "Sends a file to the user (from the files folder or a path relative to it by default).",
+    "prefix": "sendFile"
+  },
+  "set": {
+    "body": ["set()"],
+    "description": "Use to configure a global setting or set a default for a function.",
+    "prefix": "set"
+  },
+  "setFilterChain": {
+    "body": ["setFilterChain(chain = $1)"],
+    "description": "Use this function if you need a more low level way of setting the entire filter chain for a controller.",
+    "prefix": "setFilterChain"
+  },
+  "setPagination": {
+    "body": ["setPagination(totalRecords = $1)"],
+    "description": "Allows you to set a pagination handle for a custom query so you can perform pagination on it in your view with paginationLinks.",
+    "prefix": "setPagination"
+  },
+  "setPrimaryKey": {
+    "body": ["setPrimaryKey(property = \"$1\")"],
+    "description": "Allows you to pass in the name(s) of the property(s) that should be used as the primary key(s).\r\nPass as a list if defining a composite primary key.\r\nThis function is also aliased as setPrimaryKeys().",
+    "prefix": "setPrimaryKey"
+  },
+  "setPrimaryKeys": {
+    "body": ["setPrimaryKeys(property = \"$1\")"],
+    "description": "Alias for setPrimaryKey().\r\nUse this for better readability when you're setting multiple properties as the primary key.",
+    "prefix": "setPrimaryKeys"
+  },
+  "setProperties": {
+    "body": ["setProperties()"],
+    "description": "Allows you to set all the properties of an object at once by passing in a structure with keys matching the property names.",
+    "prefix": "setProperties"
+  },
+  "setResponse": {
+    "body": ["setResponse(content = \"$1\")"],
+    "description": "Sets content that CFWheels will send to the client in response to the request.",
+    "prefix": "setResponse"
+  },
+  "setTableNamePrefix": {
+    "body": ["setTableNamePrefix(prefix = \"$1\")"],
+    "description": "Sets a prefix to prepend to the table name when this model runs SQL queries.",
+    "prefix": "setTableNamePrefix"
+  },
+  "setVerificationChain": {
+    "body": ["setVerificationChain(chain = $1)"],
+    "description": "Use this function if you need a more low level way of setting the entire verification chain for a controller.",
+    "prefix": "setVerificationChain"
+  },
+  "simpleFormat": {
+    "body": ["simpleFormat(text = \"$1\")"],
+    "description": "Returns formatted text using HTML break tags () and HTML paragraph elements () based on the newline characters and carriage returns in the text that is passed in.",
+    "prefix": "simpleFormat"
+  },
+  "singularize": {
+    "body": ["singularize(word = \"$1\")"],
+    "description": "Returns the singular form of the passed in word.",
+    "prefix": "singularize"
+  },
+  "startFormTag": {
+    "body": ["startFormTag()"],
+    "description": "Builds and returns a string containing the opening form tag.\r\nThe form's action will be built according to the same rules as URLFor.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "startFormTag"
+  },
+  "string": {
+    "body": ["string()"],
+    "description": "adds string columns to table definition",
+    "prefix": "string"
+  },
+  "stripLinks": {
+    "body": ["stripLinks(html = \"$1\")"],
+    "description": "Removes all links from an HTML string, leaving just the link text.",
+    "prefix": "stripLinks"
+  },
+  "stripTags": {
+    "body": ["stripTags(html = \"$1\")"],
+    "description": "Removes all HTML tags from a string.",
+    "prefix": "stripTags"
+  },
+  "styleSheetLinkTag": {
+    "body": ["styleSheetLinkTag()"],
+    "description": "Returns a link tag for a stylesheet (or several) based on the supplied arguments.",
+    "prefix": "styleSheetLinkTag"
+  },
+  "submitTag": {
+    "body": ["submitTag()"],
+    "description": "Builds and returns a string containing a submit button form control.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "submitTag"
+  },
+  "sum": {
+    "body": ["sum(property = \"$1\")"],
+    "description": "Calculates the sum of values for a given property.\r\nUses the SQL function SUM.\r\nIf no records can be found to perform the calculation on you can use the ifNull argument to decide what should be returned.",
+    "prefix": "sum"
+  },
+  "table": {
+    "body": ["table(name = $1)"],
+    "description": "Use this method to tell CFWheels what database table to connect to for this model.\r\nYou only need to use this method when your table naming does not follow the standard CFWheels convention of a singular object name mapping to a plural table name.\r\nTo not use a table for your model at all, call table(false).",
+    "prefix": "table"
+  },
+  "tableName": {
+    "body": ["tableName()"],
+    "description": "Returns the name of the database table that this model is mapped to.",
+    "prefix": "tableName"
+  },
+  "text": {
+    "body": ["text()"],
+    "description": "adds text columns to table definition",
+    "prefix": "text"
+  },
+  "textArea": {
+    "body": ["textArea(objectName = $1, property = \"$2\")"],
+    "description": "Builds and returns a string containing a text area field form control based on the supplied objectName and property.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "textArea"
+  },
+  "textAreaTag": {
+    "body": ["textAreaTag(name = \"$1\")"],
+    "description": "Builds and returns a string containing a text area form control based on the supplied name.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "textAreaTag"
+  },
+  "textField": {
+    "body": ["textField(objectName = $1, property = \"$2\")"],
+    "description": "Builds and returns a string containing a text field form control based on the supplied objectName and property.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "textField"
+  },
+  "textFieldTag": {
+    "body": ["textFieldTag(name = \"$1\")"],
+    "description": "Builds and returns a string containing a text field form control based on the supplied name.\r\nNote: Pass any additional arguments like class, rel, and id, and the generated tag will also include those values as HTML attributes.",
+    "prefix": "textFieldTag"
+  },
+  "time": {
+    "body": ["time()"],
+    "description": "adds time columns to table definition",
+    "prefix": "time"
+  },
+  "timeAgoInWords": {
+    "body": ["timeAgoInWords(fromTime = $1)"],
+    "description": "Returns a string describing the approximate time difference between the date passed in and the current date.",
+    "prefix": "timeAgoInWords"
+  },
+  "timeSelect": {
+    "body": ["timeSelect()"],
+    "description": "Builds and returns a string containing three select form controls for hour, minute, and second based on the supplied objectName and property.",
+    "prefix": "timeSelect"
+  },
+  "timeSelectTags": {
+    "body": ["timeSelectTags(name = \"$1\")"],
+    "description": "Builds and returns a string containing three select form controls for hour, minute, and second based on name.",
+    "prefix": "timeSelectTags"
+  },
+  "timeUntilInWords": {
+    "body": ["timeUntilInWords(toTime = $1)"],
+    "description": "Returns a string describing the approximate time difference between the current date and the date passed in.",
+    "prefix": "timeUntilInWords"
+  },
+  "timestamp": {
+    "body": ["timestamp()"],
+    "description": "adds timestamp columns to table definition",
+    "prefix": "timestamp"
+  },
+  "timestamps": {
+    "body": ["timestamps()"],
+    "description": "adds CFWheels convention automatic timestamp and soft delete columns to table definition",
+    "prefix": "timestamps"
+  },
+  "titleize": {
+    "body": ["titleize(word = \"$1\")"],
+    "description": "Capitalizes all words in the text to create a nicer looking title.",
+    "prefix": "titleize"
+  },
+  "toggle": {
+    "body": ["toggle(property = \"$1\")"],
+    "description": "Assigns to the property specified the opposite of the property's current boolean value.\r\nThrows an error if the property cannot be converted to a boolean value.\r\nReturns this object if save called internally is false.",
+    "prefix": "toggle"
+  },
+  "truncate": {
+    "body": ["truncate(text = \"$1\")"],
+    "description": "Truncates text to the specified length and replaces the last characters with the specified truncate string (which defaults to \"...\").",
+    "prefix": "truncate"
+  },
+  "uniqueidentifier": {
+    "body": ["uniqueidentifier()"],
+    "description": "adds UUID columns to table definition",
+    "prefix": "uniqueidentifier"
+  },
+  "up": {
+    "body": ["up()"],
+    "description": "Migrates up: will be executed when migrating your schema forward\r\nAlong with down(), these are the two main functions in any migration file\r\nOnly available in a migration CFC",
+    "prefix": "up"
+  },
+  "update": {
+    "body": ["update()"],
+    "description": "Updates the object with the supplied properties and saves it to the database.\r\nReturns true if the object was saved successfully to the database and false otherwise.",
+    "prefix": "update"
+  },
+  "updateAll": {
+    "body": ["updateAll()"],
+    "description": "Updates all properties for the records that match the where argument.\r\nProperty names and values can be passed in either using named arguments or as a struct to the properties argument.\r\nBy default, objects will not be instantiated and therefore callbacks and validations are not invoked.\r\nYou can change this behavior by passing in instantiate=true.\r\nThis method returns the number of records that were updated.",
+    "prefix": "updateAll"
+  },
+  "updateByKey": {
+    "body": ["updateByKey(key = $1)"],
+    "description": "Finds the object with the supplied key and saves it (if validation permits it) with the supplied properties and / or named arguments.\r\nProperty names and values can be passed in either using named arguments or as a struct to the properties argument.\r\nReturns true if the object was found and updated successfully, false otherwise.",
+    "prefix": "updateByKey"
+  },
+  "updateOne": {
+    "body": ["updateOne()"],
+    "description": "Gets an object based on the arguments used and updates it with the supplied properties.\r\nReturns true if an object was found and updated successfully, false otherwise.",
+    "prefix": "updateOne"
+  },
+  "updateProperty": {
+    "body": ["updateProperty()"],
+    "description": "Updates a single property and saves the record without going through the normal validation procedure.\r\nThis is especially useful for boolean flags on existing records.",
+    "prefix": "updateProperty"
+  },
+  "updateRecord": {
+    "body": ["updateRecord(table = \"$1\")"],
+    "description": "Updates an existing record in a table\r\nOnly available in a migration CFC",
+    "prefix": "updateRecord"
+  },
+  "usesLayout": {
+    "body": ["usesLayout(template = \"$1\")"],
+    "description": "Used within a controller's config() function to specify controller- or action-specific layouts.",
+    "prefix": "usesLayout"
+  },
+  "valid": {
+    "body": ["valid()"],
+    "description": "Runs the validation on the object and returns true if it passes it.\r\nCFWheels will run the validation process automatically whenever an object is saved to the database, but sometimes it's useful to be able to run this method to see if the object is valid without saving it to the database.",
+    "prefix": "valid"
+  },
+  "validate": {
+    "body": ["validate()"],
+    "description": "Registers method(s) that should be called to validate objects before they are saved.",
+    "prefix": "validate"
+  },
+  "validateOnCreate": {
+    "body": ["validateOnCreate()"],
+    "description": "Registers method(s) that should be called to validate new objects before they are inserted.",
+    "prefix": "validateOnCreate"
+  },
+  "validateOnUpdate": {
+    "body": ["validateOnUpdate()"],
+    "description": "Registers method(s) that should be called to validate existing objects before they are updated.",
+    "prefix": "validateOnUpdate"
+  },
+  "validatesConfirmationOf": {
+    "body": ["validatesConfirmationOf()"],
+    "description": "Validates that the value of the specified property also has an identical confirmation value.\r\nThis is common when having a user type in their email address a second time to confirm, confirming a password by typing it a second time, etc.\r\nThe confirmation value only exists temporarily and never gets saved to the database.\r\nBy convention, the confirmation property has to be named the same as the property with \"Confirmation\" appended at the end.\r\nUsing the password example, to confirm our password property, we would create a property called passwordConfirmation.",
+    "prefix": "validatesConfirmationOf"
+  },
+  "validatesExclusionOf": {
+    "body": ["validatesExclusionOf(list = \"$1\")"],
+    "description": "Validates that the value of the specified property does not exist in the supplied list.",
+    "prefix": "validatesExclusionOf"
+  },
+  "validatesFormatOf": {
+    "body": ["validatesFormatOf()"],
+    "description": "Validates that the value of the specified property is formatted correctly by matching it against a regular expression using the regEx argument and / or against a built-in CFML validation type using the type argument (creditcard, date, email, etc.).",
+    "prefix": "validatesFormatOf"
+  },
+  "validatesInclusionOf": {
+    "body": ["validatesInclusionOf(list = \"$1\")"],
+    "description": "Validates that the value of the specified property exists in the supplied list.",
+    "prefix": "validatesInclusionOf"
+  },
+  "validatesLengthOf": {
+    "body": ["validatesLengthOf()"],
+    "description": "Validates that the value of the specified property matches the length requirements supplied.\r\nUse the exactly, maximum, minimum and within arguments to specify the length requirements.",
+    "prefix": "validatesLengthOf"
+  },
+  "validatesNumericalityOf": {
+    "body": ["validatesNumericalityOf()"],
+    "description": "Validates that the value of the specified property is numeric.",
+    "prefix": "validatesNumericalityOf"
+  },
+  "validatesPresenceOf": {
+    "body": ["validatesPresenceOf()"],
+    "description": "Validates that the specified property exists and that its value is not blank.",
+    "prefix": "validatesPresenceOf"
+  },
+  "validatesUniquenessOf": {
+    "body": ["validatesUniquenessOf()"],
+    "description": "Validates that the value of the specified property is unique in the database table.\r\nUseful for ensuring that two users can't sign up to a website with identical usernames for example.\r\nWhen a new record is created, a check is made to make sure that no record already exists in the database table with the given value for the specified property.\r\nWhen the record is updated, the same check is made but disregarding the record itself.",
+    "prefix": "validatesUniquenessOf"
+  },
+  "validationTypeForProperty": {
+    "body": ["validationTypeForProperty(property = \"$1\")"],
+    "description": "Returns the validation type for the property.",
+    "prefix": "validationTypeForProperty"
+  },
+  "verificationChain": {
+    "body": ["verificationChain()"],
+    "description": "Returns an array of all the verifications set on this controller in the order in which they will be executed.",
+    "prefix": "verificationChain"
+  },
+  "verifies": {
+    "body": ["verifies()"],
+    "description": "Instructs CFWheels to verify that some specific criterias are met before running an action.\r\nNote that all undeclared arguments will be passed to redirectTo() call if a handler is not specified.",
+    "prefix": "verifies"
+  },
+  "wildcard": {
+    "body": ["wildcard()"],
+    "description": "Special wildcard matching generates routes with `",
+    "prefix": "wildcard"
+  },
+  "wordTruncate": {
+    "body": ["wordTruncate(text = \"$1\")"],
+    "description": "Truncates text to the specified length of words and replaces the remaining characters with the specified truncate string (which defaults to \"...\").",
+    "prefix": "wordTruncate"
+  },
+  "yearSelectTag": {
+    "body": ["yearSelectTag(name = \"$1\")"],
+    "description": "Builds and returns a string containing a select form control for a range of years based on the supplied name.",
+    "prefix": "yearSelectTag"
+  }
 }
