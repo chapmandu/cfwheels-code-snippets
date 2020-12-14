@@ -5,3 +5,5 @@ A VSCode snippets extension for the [CFWheels](https://api.cfwheels.org) framewo
 ## Contributing
 
 Pull requests welcome.
+
+[https://github.com/chapmandu/cfwheels-code-snippets](https://github.com/chapmandu/cfwheels-code-snippets)
